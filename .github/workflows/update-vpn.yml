@@ -25,7 +25,7 @@ jobs:
           echo "# Last update: $(date -u +'%Y-%m-%d %H:%M UTC')" >> subscriptions.txt
           echo "" >> subscriptions.txt
           
-          curl -s "https://api.github.com/users/$USER/gists?per_page=100" > gists.json
+          curl -s "https://api.github.com/users/$USER/gists?per_page=10" > gists.json
           
           jq -r '.[].files | to_entries[] | .value.raw_url' gists.json | while read -r raw_url; do
             if [ -n "$raw_url" ]; then
