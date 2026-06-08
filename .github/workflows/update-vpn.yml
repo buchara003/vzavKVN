@@ -1,0 +1,38 @@
+name: Update VPN Subs from Gists
+
+on:
+  schedule:
+    - cron: '0 5 * * *'      # каждый день в 5:00 UTC (удобное время)
+  workflow_dispatch:         # кнопка "Run workflow" вручную
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Combine all gists into one subscription
+        run: |
+          USER="j80547013-max"
+          
+          echo "# Combined VPN Subscription from @j80547013-max" > subscriptions.txt
+          echo "# Last update: $(date -u +'%Y-%m-%d %H:%M UTC')" >> subscriptions.txt
+          echo "" >> subscriptions.txt
+          
+          # Получаем все гисты
+          curl -s "https://api.github.com/users/$USER/gists?per_page=100" > gists.json
+          
+          # Скачиваем содержимое всех файлов из всех гистов
+          jq -r '.[].files | to_entries[] | .value.raw_url' gists.json | while read -r raw_url; do
+            if [ -n "$raw_url" ]; then
+              echo "→ Fetching: $raw_url"
+              echo "=== New configs from gist ===" >> subscriptions.txt
+              curl -s "$raw_url" >> subscriptions.txt
+              echo -e "\n\n" >> subscriptions.txt
+            fi
+          done
+
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update combined VPN subscription from gists"
