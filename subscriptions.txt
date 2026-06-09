@@ -1,5 +1,23 @@
 # Combined VPN Subscription from @j80547013-max
-# Last update: 2026-06-09 12:43 UTC
+# Last update: 2026-06-09 14:49 UTC
+
+=== New configs from gist ===
+#profile-title: 📶  тг к @happcluchi    
+#profile-update-interval: 3
+#subscription-userinfo: upload=0; download=0; total=0; expire=0
+#support-url: https://t.me/happcluchi
+#announce:  ключ взят из тг @happcluchi
+
+
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@14.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%AA%F0%9F%87%BA+%D0%90%D0%B2%D1%82%D0%BE@happcluchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@18.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%AA%F0%9F%87%BA+%D0%90%D0%B2%D1%82%D0%BE@happcluchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@1.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%AA%F0%9F%87%BA+%D0%90%D0%B2%D1%82%D0%BE@happcluchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@3.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%D0%A2%D0%BE%D1%80%D1%80%D0%B5%D0%BD%D1%82%D1%8B@happcouchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@14.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%A8%F0%9F%87%AD%D0%A8%D0%B2%D0%B5%D0%B9%D1%86%D0%B0%D1%80%D0%B8%D1%8F@happcpuchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@18.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%A8%F0%9F%87%BF+%D0%A7%D0%B5%D1%85%D0%B8%D1%8F@happcluchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@1.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%B8%F0%9F%87%AA+%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F@happcluchi
+hysteria2://5bef9b9f-d83f-4423-bb64-6ed2668eff76@2.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%A9%F0%9F%87%AA+%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F@happcouchi
+
 
 === New configs from gist ===
 #profile-title: 📶  тг к @happcluchi    
@@ -73,37 +91,5 @@ vless://0703f173-8e3b-4333-b1ec-65c31117a95a@app.pushbyte.cc:3002?type=xhttp&sec
 vless://0703f173-8e3b-4333-b1ec-65c31117a95a@82.117.87.84:443?type=xhttp&security=reality&sni=www.kaspersky.ru&pbk=nmdu3rhLXUr8KzGtN_0D4Zc5JS1V8t9S4_iDXvtWk2I&fp=firefox#%F0%9F%87%B7%F0%9F%87%BA++Moscow
 vless://0703f173-8e3b-4333-b1ec-65c31117a95a@45.39.33.253:8443?type=xhttp&security=reality&sni=www.ups.com&pbk=vlr8yVb-r0LM0zYDU8Ye3WWVRURoW_LEDyrrstNHYXw&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8+United+States
 vless://0703f173-8e3b-4333-b1ec-65c31117a95a@vfghoo66f5.a.trbcdn.net:443?type=xhttp&security=tls&sni=vfghoo66f5.a.trbcdn.net&fp=chrome#%F0%9F%87%B7%F0%9F%87%BA+%D0%91%D0%B5%D0%BB%D1%8B%D0%B5+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8+%D1%82%D0%B5%D1%81%D1%82+2
-
-
-=== New configs from gist ===
-#profile-title: 📶  тг к @happcluchi    
-#profile-update-interval: 3
-#subscription-userinfo: upload=0; download=0; total=0; expire=0
-#support-url: https://t.me/happcluchi
-#announce:  ключ взят из тг @happcluchi
-
-
-
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ov1.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%AB%F0%9F%87%AE%20Telegram%3A%20%40Happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ov2.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%AB%F0%9F%87%AE%20Telegram%3A%20%40Happcluchi%20
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh4.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%A8%F0%9F%87%AE%20IMO%20ID%3A%20happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh44.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%A7%F0%9F%87%AA%20%D0%91%D0%B5%D0%BB%D0%B3%D0%B8%D1%8F%20%E2%81%B4@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh7.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%B1%F0%9F%87%BA%20Telegram%3A%20%40HappVPN%20%F0%9F%91%A4%E2%81%B5@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh54.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%A6%F0%9F%87%B9%20%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F%20%F0%9F%91%A4%E2%81%B6@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh544.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%B7%F0%9F%87%B4%20%D0%A0%D1%83%D0%BC%D1%8B%D0%BD%D0%B8%D1%8F%20%E2%81%B7@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ov5.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%B2%F0%9F%87%A8%20%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%20%20%E2%81%B8@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ov9.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%A6%F0%9F%87%B9%20%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F%20@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ov10.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%B8%F0%9F%87%AA%20%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F%20%C2%B9%E2%81%B0@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh11.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%A7%F0%9F%87%AC%20%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F%20%C2%B9%C2%B9@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh12.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%C2%B9%C2%B2@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ovh13.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%AE%F0%9F%87%A9%20%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%20%C2%B9%C2%B3@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=ov95.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%AE%F0%9F%87%B9%20%D0%9C%D0%B8%D0%BB%D0%B0%D0%BD%20%C2%B9%E2%81%B4@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@151.101.108.222:443?security=tls&type=xhttp&headerType=&path=%2F&host=rd.global.ssl.fastly.net&mode=packet-up&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=www.fastly.com&fp=chrome&alpn=h3#%F0%9F%87%AE%F0%9F%87%A9%20%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%B2%D0%B0%20%C2%B9%E2%81%B5@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@91.186.216.62:443?security=tls&type=ws&headerType=&path=%2F&host=ned.lebaptm.online&sni=ned.lebaptm.online&fp=chrome&alpn=http%2F1.1#%F0%9F%87%B1%F0%9F%87%BA%20%5BNL%5D%20-%20%D0%94%D0%BB%D1%8F%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%F0%9F%94%A5@happcluchi
-vless://e44aece7-8cd3-4208-b40a-5ade906fd55f@91.186.216.62:443?security=tls&type=ws&headerType=&path=%2F&host=ned.lebaptm.online&sni=ned.lebaptm.online&fp=chrome&alpn=http%2F1.1#%F0%9F%87%B1%F0%9F%87%BA%20%5BNL%C2%B2%5D%20-%20%D0%94%D0%BB%D1%8F%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%F0%9F%94%A5@happcluchi
-
-vless://61e15e4a-4fb5-0064-b303-7616131c9e8e@premium-us.geodema.network:443?type=tcp&security=reality&sni=www.nvidia.com&pbk=EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8&flow=xtls-rprx-vision&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8+%D0%A1%D0%A8%D0%90@happcouchi
-vless://61e15e4a-4fb5-4b0d-b303-7616131c9e8e@free-de.moscow-neversleep.digital:753?type=tcp&security=reality&sni=free-de.moscow-neversleep.digital&pbk=zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M&flow=xtls-rprx-vision&fp=firefox#%F0%9F%87%A9%F0%9F%87%AA++%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F@happcluchi
-vless://61e15e4a-4fb5-4b0d-b303-7616131c9e8e@free-ne.moscow-neversleep.digital:443?type=tcp&security=reality&sni=free-us.moscow-neversleep.digital&pbk=zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M&flow=xtls-rprx-vision&fp=firefox#%F0%9F%87%B3%F0%9F%87%B1++%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B@happcluchi
 
 
