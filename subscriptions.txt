@@ -1,5 +1,32 @@
 # Combined VPN Subscription from @j80547013-max
-# Last update: 2026-06-12 12:50 UTC
+# Last update: 2026-06-12 19:05 UTC
+
+=== New configs from gist ===
+
+
+#profile-title: 📶  тг к @happcluchi    
+#profile-update-interval: 3
+#subscription-userinfo: upload=0; download=0; total=0; expire=0
+#support-url: https://t.me/happcluchi
+#announce:  ключ взят из тг @happcluchi
+
+
+
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@origin-fin.tgflovv.ru:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=Ucl1yzZEDKXJGE6DVhHU7zYVLpU5bvJNtqywmyK_yxQ&security=reality&sid=b1b2b3a4&sni=www.microsoft.com&type=tcp#%F0%9F%87%AA%F0%9F%87%BA%D0%90%D0%92%D0%A2%D0%9E%D0%92%D0%AB%D0%91%D0%9E%D0%A0
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@78.17.98.36:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=HA772VN0jk_nXjzMj2O1vxR4Ibr2OyS-rfMb6VJggnU&security=reality&sid=d5e7f1a2&sni=www.microsoft.com&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@origin-fin.tgflovv.ru:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=Ucl1yzZEDKXJGE6DVhHU7zYVLpU5bvJNtqywmyK_yxQ&security=reality&sid=b1b2b3a4&sni=www.microsoft.com&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F%20%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@78.17.74.105:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=xPEGOkemuDiyFtsONindkZogpEo8HC-Zs_puF-0GbUA&security=reality&sid=b1b7b3a4&sni=www.microsoft.com&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@87.58.216.192:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=bLUwhE1Gik9d9Woyk3RvGwEnPVs767CEetApHt8unSY&security=reality&sid=e2b4c6f5&sni=www.microsoft.com&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@89.125.212.104:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=05cbXg151A4Ip3uNCeSvtWE1Fl_JoDAwqZ-JfFZxlH8&security=reality&sid=a3f7c2e1&sni=www.microsoft.com&type=tcp#%F0%9F%87%AC%F0%9F%87%A7%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@2.26.88.221:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=Ucl1yzZEDKXJGE6DVhHU7zYVLpU5bvJNtqywmyK_yxQ&security=reality&sid=b1b2b3a4&sni=www.microsoft.com&type=tcp#%F0%9F%87%B1%F0%9F%87%BB%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@144.31.243.96:8443?encryption=none&flow=xtls-rprx-vision&fp=edge&pbk=Ucl1yzZEDKXJGE6DVhHU7zYVLpU5bvJNtqywmyK_yxQ&security=reality&sid=b1b2b3a4&sni=www.microsoft.com&type=tcp#%F0%9F%87%B1%F0%9F%87%B9%D0%9B%D0%B8%D1%82%D0%B2%D0%B0%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@94.183.239.13:8443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=grpc#%F0%9F%87%AA%F0%9F%87%AA%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@176.124.207.194:8443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=grpc#%F0%9F%87%B8%F0%9F%87%AA%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F%20%E2%9A%A1%EF%B8%8F
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@cdn-fin.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%AB%F0%9F%87%AE%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F%20LTE
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@cdn-nl.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%B3%F0%9F%87%B1%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20LTE
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@cdn-de.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%A9%F0%9F%87%AA%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20LTE
+vless://5b3ef1ee-60f1-4700-8caf-743d2509bced@cdn-us.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%D0%A1%D0%A8%D0%90%20LTE
+
 
 === New configs from gist ===
 #profile-title: 📶  тг к @happcluchi    
@@ -56,24 +83,5 @@ vless://b6a3cf09-1c4f-4d29-8688-1afca647ce30@cdn-fin.tgflovv.ru:443?encryption=n
 vless://b6a3cf09-1c4f-4d29-8688-1afca647ce30@cdn-nl.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%B3%F0%9F%87%B1%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20LTE
 vless://b6a3cf09-1c4f-4d29-8688-1afca647ce30@cdn-de.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%A9%F0%9F%87%AA%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20LTE
 vless://b6a3cf09-1c4f-4d29-8688-1afca647ce30@cdn-us.tgflovv.ru:443?encryption=none&flow=&fp=null&pbk=null&security=tls&sid=null&sni=null&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%D0%A1%D0%A8%D0%90%20LTE
-
-
-=== New configs from gist ===
-
-#profile-title: 📶  тг к @happcluchi    
-#profile-update-interval: 3
-#subscription-userinfo: upload=0; download=0; total=0; expire=0
-#support-url: https://t.me/happcluchi
-#announce:  ключ взят из тг @happcluchi
-
-
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@14.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%AA%F0%9F%87%BA+%D0%90%D0%B2%D1%82%D0%BE
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@18.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%AA%F0%9F%87%BA+%D0%90%D0%B2%D1%82%D0%BE
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@1.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%AA%F0%9F%87%BA+%D0%90%D0%B2%D1%82%D0%BE
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@3.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%D0%A2%D0%BE%D1%80%D1%80%D0%B5%D0%BD%D1%82%D1%8B
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@14.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%A8%F0%9F%87%AD%D0%A8%D0%B2%D0%B5%D0%B9%D1%86%D0%B0%D1%80%D0%B8%D1%8F
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@18.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%A8%F0%9F%87%BF+%D0%A7%D0%B5%D1%85%D0%B8%D1%8F
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@1.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%B8%F0%9F%87%AA+%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F
-hysteria2://da56f916-b1d4-4e05-a7e1-c9b79a3696fb@2.node.snly.win:443?sni=flc.ydns.eu&alpn=h3#%F0%9F%87%A9%F0%9F%87%AA+%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F
 
 
