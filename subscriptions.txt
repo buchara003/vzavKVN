@@ -1,5 +1,5 @@
 # Combined VPN Subscription from @j80547013-max
-# Last update: 2026-06-13 11:49 UTC
+# Last update: 2026-06-13 18:07 UTC
 
 === New configs from gist ===
 
