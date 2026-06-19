@@ -2,8 +2,8 @@ name: Обновить 6pc ежедневно
 
 on:
   schedule:
-    - cron: '0 3 * * *'     # каждый день в 03:00 UTC (можно изменить)
-  workflow_dispatch:         # можно запускать вручную
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 jobs:
   update-subscriptions:
@@ -29,7 +29,6 @@ from datetime import datetime
 
 OWNER = "po5p"
 REPO = "hpc"
-BRANCH = "main"
 OUTPUT_FILE = "6pc"
 
 def get_all_txt_files():
