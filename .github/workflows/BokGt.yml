@@ -1,0 +1,44 @@
+name: Update bokGt from po5p/TgBot
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '0 4 * * *'     # 07:00 МСК
+    - cron: '0 16 * * *'    # 19:00 МСК
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Объединить все подписки в bokGt
+        run: |
+          echo "# bokGt — Объединённые подписки" > bokGt
+          echo "# Источник: https://github.com/po5p/TgBot" >> bokGt
+          echo "# Обновлено: $(date -u +'%Y-%m-%d %H:%M UTC')" >> bokGt
+          echo "# Всего файлов: $(curl -s https://api.github.com/repos/po5p/TgBot/contents | jq '.[] | select(.type == "file" and (.name | endswith(".txt"))) | length')" >> bokGt
+          echo "" >> bokGt
+          echo "" >> bokGt
+
+          # Скачиваем содержимое всех .txt файлов и склеиваем
+          curl -s "https://api.github.com/repos/po5p/TgBot/contents" | \
+          jq -r '.[] | select(.type == "file" and (.name | endswith(".txt"))) | .download_url' | \
+          while read -r url; do
+            if [ -n "$url" ]; then
+              curl -s "$url" >> bokGt
+              echo "" >> bokGt
+            fi
+          done
+
+          echo "✅ Готово! Строк в bokGt: $(wc -l < bokGt)"
+
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Автообновление bokGt $(date -u +'%Y-%m-%d %H:%M UTC')"
