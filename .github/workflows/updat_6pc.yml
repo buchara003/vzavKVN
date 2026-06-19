@@ -1,8 +1,12 @@
-name: Обновить 6pc ежедневно
+name: Update 6pc from po5p/hpc
+
+permissions:
+  contents: write
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 3 * * *'     # 06:00 по Москве
+    - cron: '0 15 * * *'    # 18:00 по Москве
   workflow_dispatch:
 
 jobs:
@@ -10,65 +14,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          fetch-depth: 0
 
-      - name: Install requests
-        run: pip install requests
-
-      - name: Объединить подписки в 6pc
+      - name: Объединить все txt в 6pc
         run: |
-          python - << 'EOF'
-import requests
-from datetime import datetime
+          echo "# Объединённые подписки 6pc" > 6pc
+          echo "# Источник: po5p/hpc" >> 6pc
+          echo "# Последнее обновление: $(date -u +'%Y-%m-%d %H:%M UTC')" >> 6pc
+          echo "" >> 6pc
 
-OWNER = "po5p"
-REPO = "hpc"
-OUTPUT_FILE = "6pc"
+          # Получаем список всех .txt файлов из репозитория
+          curl -s "https://api.github.com/repos/po5p/hpc/contents" > repo.json
 
-# Получаем список txt файлов
-url = f"https://api.github.com/repos/{OWNER}/{REPO}/contents"
-headers = {"Accept": "application/vnd.github.v3+json"}
-response = requests.get(url, headers=headers)
-response.raise_for_status()
+          jq -r '.[] | select(.type == "file" and .name | endswith(".txt")) | .download_url' repo.json | while read -r url; do
+            if [ -n "$url" ]; then
+              filename=$(basename "$url")
+              echo "→ Скачиваем: $filename"
+              echo -e "\n# === $filename ===" >> 6pc
+              curl -s "$url" >> 6pc
+              echo -e "\n" >> 6pc
+            fi
+          done
 
-files = [item for item in response.json() 
-         if item.get("type") == "file" and item["name"].endswith(".txt")]
+          echo "Готово! Всего строк в 6pc: $(wc -l < 6pc)"
 
-print(f"Найдено {len(files)} .txt файлов")
-
-combined = []
-combined.append(f"# Объединённые подписки (6pc) — обновлено: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-combined.append(f"# Всего источников: {len(files)}\n\n")
-
-for item in files:
-    try:
-        print(f"Скачиваем: {item['name']}")
-        content = requests.get(item["download_url"]).text
-        combined.append(f"\n# === {item['name']} ===\n")
-        combined.append(content.strip() + "\n")
-    except Exception as e:
-        print(f"Ошибка при обработке {item['name']}: {e}")
-
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    f.writelines(combined)
-
-print(f"Файл {OUTPUT_FILE} успешно создан")
-EOF
-
-      - name: Commit and Push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          if git diff --quiet 6pc; then
-            echo "Изменений нет"
-          else
-            git add 6pc
-            git commit -m "Автообновление 6pc $(date +'%Y-%m-%d %H:%M')"
-            git push
-            echo "6pc обновлён"
-          fi
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Автообновление 6pc $(date -u +'%Y-%m-%d %H:%M UTC')"
