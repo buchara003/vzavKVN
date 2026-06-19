@@ -6,22 +6,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-subscriptions:
+  update:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install requests
         run: pip install requests
 
-      - name: Объединить все подписки в 6pc
+      - name: Объединить подписки в 6pc
         run: |
           python - << 'EOF'
 import requests
@@ -31,36 +29,29 @@ OWNER = "po5p"
 REPO = "hpc"
 OUTPUT_FILE = "6pc"
 
-def get_all_txt_files():
-    url = f"https://api.github.com/repos/{OWNER}/{REPO}/contents"
-    headers = {"Accept": "application/vnd.github.v3+json"}
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    
-    files = []
-    for item in response.json():
-        if item["type"] == "file" and item["name"].endswith(".txt"):
-            files.append({
-                "name": item["name"],
-                "download_url": item["download_url"]
-            })
-    return files
+# Получаем список txt файлов
+url = f"https://api.github.com/repos/{OWNER}/{REPO}/contents"
+headers = {"Accept": "application/vnd.github.v3+json"}
+response = requests.get(url, headers=headers)
+response.raise_for_status()
 
-files = get_all_txt_files()
+files = [item for item in response.json() 
+         if item.get("type") == "file" and item["name"].endswith(".txt")]
+
 print(f"Найдено {len(files)} .txt файлов")
 
 combined = []
 combined.append(f"# Объединённые подписки (6pc) — обновлено: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 combined.append(f"# Всего источников: {len(files)}\n\n")
 
-for file_info in files:
+for item in files:
     try:
-        print(f"Скачиваем: {file_info['name']}")
-        content = requests.get(file_info["download_url"]).text
-        combined.append(f"\n# === {file_info['name']} ===\n")
+        print(f"Скачиваем: {item['name']}")
+        content = requests.get(item["download_url"]).text
+        combined.append(f"\n# === {item['name']} ===\n")
         combined.append(content.strip() + "\n")
     except Exception as e:
-        print(f"Ошибка при обработке {file_info['name']}: {e}")
+        print(f"Ошибка при обработке {item['name']}: {e}")
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.writelines(combined)
@@ -68,16 +59,16 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 print(f"Файл {OUTPUT_FILE} успешно создан")
 EOF
 
-      - name: Commit and push changes
+      - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          if git diff --quiet "$OUTPUT_FILE"; then
+          if git diff --quiet 6pc; then
             echo "Изменений нет"
           else
-            git add "$OUTPUT_FILE"
+            git add 6pc
             git commit -m "Автообновление 6pc $(date +'%Y-%m-%d %H:%M')"
             git push
-            echo "Файл 6pc обновлён и запушен"
+            echo "6pc обновлён"
           fi
