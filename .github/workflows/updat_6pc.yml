@@ -5,8 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 3 * * *'     # 06:00 по Москве
-    - cron: '0 15 * * *'    # 18:00 по Москве
+    - cron: '0 3 * * *'     # 06:00 МСК
+    - cron: '0 15 * * *'    # 18:00 МСК
   workflow_dispatch:
 
 jobs:
@@ -17,27 +17,26 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Объединить все txt в 6pc
+      - name: Объединить все подписки в один файл 6pc
         run: |
-          echo "# Объединённые подписки 6pc" > 6pc
-          echo "# Источник: po5p/hpc" >> 6pc
-          echo "# Последнее обновление: $(date -u +'%Y-%m-%d %H:%M UTC')" >> 6pc
+          echo "# 6pc — Объединённые подписки" > 6pc
+          echo "# Источник: https://github.com/po5p/hpc" >> 6pc
+          echo "# Обновлено: $(date -u +'%Y-%m-%d %H:%M UTC')" >> 6pc
+          echo "# Всего файлов: $(curl -s https://api.github.com/repos/po5p/hpc/contents | jq '.[] | select(.type == "file" and (.name | endswith(".txt"))) | length')" >> 6pc
+          echo "" >> 6pc
           echo "" >> 6pc
 
-          # Получаем список всех .txt файлов из репозитория
-          curl -s "https://api.github.com/repos/po5p/hpc/contents" > repo.json
-
-          jq -r '.[] | select(.type == "file" and .name | endswith(".txt")) | .download_url' repo.json | while read -r url; do
+          # Скачиваем содержимое всех .txt и просто склеиваем
+          curl -s "https://api.github.com/repos/po5p/hpc/contents" | \
+          jq -r '.[] | select(.type == "file" and (.name | endswith(".txt"))) | .download_url' | \
+          while read -r url; do
             if [ -n "$url" ]; then
-              filename=$(basename "$url")
-              echo "→ Скачиваем: $filename"
-              echo -e "\n# === $filename ===" >> 6pc
               curl -s "$url" >> 6pc
-              echo -e "\n" >> 6pc
+              echo "" >> 6pc          # пустая строка между файлами
             fi
           done
 
-          echo "Готово! Всего строк в 6pc: $(wc -l < 6pc)"
+          echo "✅ Готово! Строк в 6pc: $(wc -l < 6pc)"
 
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
