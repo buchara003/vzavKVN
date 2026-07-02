@@ -5,8 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 4 * * *'
-    - cron: '0 16 * * *'
+    - cron: '0 9 * * *'     # 12:00 МСК
+    - cron: '0 16 * * *'    # 19:00 МСК
   workflow_dispatch:
 
 jobs:
@@ -24,20 +24,13 @@ jobs:
           echo "# Обновлено: $(date -u +'%Y-%m-%d %H:%M UTC')" >> bokGt
           echo "" >> bokGt
 
-          # Получаем рекурсивное дерево файлов (включая вложенные папки)
-          curl -s "https://api.github.com/repos/po5p/TgBot/git/trees/main?recursive=1" > tree.json
-
-          # Находим все .txt файлы внутри папки users/
+          # Получаем рекурсивное дерево и сразу обрабатываем
+          curl -s "https://api.github.com/repos/po5p/TgBot/git/trees/main?recursive=1" | \
           jq -r '
             .tree[] | 
             select(.type == "blob" and (.path | startswith("users/") and endswith(".txt")))
             | "https://raw.githubusercontent.com/po5p/TgBot/main/" + .path
-          ' tree.json > urls.txt
-
-          echo "# Всего файлов найдено: $(wc -l < urls.txt)" >> bokGt
-          echo "" >> bokGt
-
-          # Скачиваем содержимое каждого файла
+          ' | \
           while read -r url; do
             if [ -n "$url" ]; then
               filename=$(basename "$url")
@@ -45,8 +38,9 @@ jobs:
               curl -s "$url" >> bokGt
               echo "" >> bokGt
             fi
-          done < urls.txt
+          done
 
+          echo "# Всего файлов: $(grep -c '^→ Добавляем:' bokGt || echo 0)" >> bokGt
           echo "✅ Готово! Строк в bokGt: $(wc -l < bokGt)"
 
       - name: Commit if changed
