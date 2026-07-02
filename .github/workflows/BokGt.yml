@@ -24,7 +24,7 @@ jobs:
           echo "# Обновлено: $(date -u +'%Y-%m-%d %H:%M UTC')" >> bokGt
           echo "" >> bokGt
 
-          # Получаем рекурсивное дерево и сразу обрабатываем
+          # Получаем все .txt файлы рекурсивно и сразу скачиваем
           curl -s "https://api.github.com/repos/po5p/TgBot/git/trees/main?recursive=1" | \
           jq -r '
             .tree[] | 
@@ -40,7 +40,8 @@ jobs:
             fi
           done
 
-          echo "# Всего файлов: $(grep -c '^→ Добавляем:' bokGt || echo 0)" >> bokGt
+          echo "" >> bokGt
+          echo "# Всего файлов обработано: $(grep -c '^→ Добавляем:' bokGt || echo 0)" >> bokGt
           echo "✅ Готово! Строк в bokGt: $(wc -l < bokGt)"
 
       - name: Commit if changed
