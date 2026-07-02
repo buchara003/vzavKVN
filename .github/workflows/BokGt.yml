@@ -17,20 +17,26 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Объединить все подписки в bokGt
+      - name: Объединить все подписки из папки users в bokGt
         run: |
           echo "# bokGt — Объединённые подписки" > bokGt
-          echo "# Источник: https://github.com/po5p/TgBot" >> bokGt
+          echo "# Источник: https://github.com/po5p/TgBot/tree/main/users" >> bokGt
           echo "# Обновлено: $(date -u +'%Y-%m-%d %H:%M UTC')" >> bokGt
-          echo "# Всего файлов: $(curl -s https://api.github.com/repos/po5p/TgBot/contents | jq '.[] | select(.type == "file" and (.name | endswith(".txt"))) | length')" >> bokGt
-          echo "" >> bokGt
           echo "" >> bokGt
 
-          # Скачиваем содержимое всех .txt файлов и склеиваем
-          curl -s "https://api.github.com/repos/po5p/TgBot/contents" | \
-          jq -r '.[] | select(.type == "file" and (.name | endswith(".txt"))) | .download_url' | \
+          # Получаем содержимое папки users
+          curl -s "https://api.github.com/repos/po5p/TgBot/contents/users" > contents.json
+
+          # Считаем количество файлов
+          echo "# Всего файлов: $(jq '. | length' contents.json)" >> bokGt
+          echo "" >> bokGt
+
+          # Скачиваем содержимое всех файлов из папки users и склеиваем
+          jq -r '.[] | select(.type == "file") | .download_url' contents.json | \
           while read -r url; do
             if [ -n "$url" ]; then
+              filename=$(basename "$url")
+              echo "→ Добавляем: $filename"
               curl -s "$url" >> bokGt
               echo "" >> bokGt
             fi
