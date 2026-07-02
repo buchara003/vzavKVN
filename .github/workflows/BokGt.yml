@@ -5,8 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 4 * * *'     # 07:00 МСК
-    - cron: '0 16 * * *'    # 19:00 МСК
+    - cron: '0 4 * * *'
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:
@@ -17,22 +17,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Объединить все подписки из папки users в bokGt
+      - name: Объединить все подписки из users/ в bokGt
         run: |
           echo "# bokGt — Объединённые подписки" > bokGt
           echo "# Источник: https://github.com/po5p/TgBot/tree/main/users" >> bokGt
           echo "# Обновлено: $(date -u +'%Y-%m-%d %H:%M UTC')" >> bokGt
           echo "" >> bokGt
 
-          # Получаем содержимое папки users
-          curl -s "https://api.github.com/repos/po5p/TgBot/contents/users" > contents.json
+          # Получаем рекурсивное дерево файлов (включая вложенные папки)
+          curl -s "https://api.github.com/repos/po5p/TgBot/git/trees/main?recursive=1" > tree.json
 
-          # Считаем количество файлов
-          echo "# Всего файлов: $(jq '. | length' contents.json)" >> bokGt
+          # Находим все .txt файлы внутри папки users/
+          jq -r '
+            .tree[] | 
+            select(.type == "blob" and (.path | startswith("users/") and endswith(".txt")))
+            | "https://raw.githubusercontent.com/po5p/TgBot/main/" + .path
+          ' tree.json > urls.txt
+
+          echo "# Всего файлов найдено: $(wc -l < urls.txt)" >> bokGt
           echo "" >> bokGt
 
-          # Скачиваем содержимое всех файлов из папки users и склеиваем
-          jq -r '.[] | select(.type == "file") | .download_url' contents.json | \
+          # Скачиваем содержимое каждого файла
           while read -r url; do
             if [ -n "$url" ]; then
               filename=$(basename "$url")
@@ -40,7 +45,7 @@ jobs:
               curl -s "$url" >> bokGt
               echo "" >> bokGt
             fi
-          done
+          done < urls.txt
 
           echo "✅ Готово! Строк в bokGt: $(wc -l < bokGt)"
 
