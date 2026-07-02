@@ -1,6 +1,6 @@
 # 6pc — Объединённые подписки
 # Источник: https://github.com/po5p/hpc
-# Обновлено: 2026-07-01 17:04 UTC
+# Обновлено: 2026-07-02 06:40 UTC
 # Всего файлов: 10
 
 
@@ -10,15 +10,15 @@
 #profile-web-page-url: https://t.me/freevpnconfigh
 #announce: ВНИМАНИЕ: ИСПОЛЬЗУЙТЕ ПОДПИСКУ ТОЛЬКО ДЛЯ ОБХОДА БЕЛЫХ СПИСКОВ. Бесплатные конфигурации ➡️@freevpnconfigh⬅️
 
-vless://a88ea8bf-7001-4e29-a9bb-379f6778195c@178.250.243.230:9823?security=reality&encryption=none&pbk=iNnoaSfyKvdo5kp5znHSGFNqFxNhS0ormvHHHwsUSTM&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=0123456789abcdef#Россия 1
-
-vless://7cec3808-65d4-4dbd-941f-e9b640977071@cdn.stroimvmeste.icu:443?path=%2Fstart&security=tls&encryption=none&alpn=http/1.1,h2&host=cdn.stroimvmeste.icu&fp=chrome&allowinsecure=0&type=ws&sni=cdn.stroimvmeste.icu#Германия 1
-
-vless://0c8d92f7-12dc-4bbe-ae9b-aeae5bdf4b2a@v-cdn.layeriq.ru:443?mode=packet-up&path=%2Fapi%2Fv1%2Freceive&security=tls&encryption=none&extra=%7B%22mode%22%3A%22packet-up%22%2C%22uplinkHTTPMethod%22%3A%22GET%22%2C%22sessionPlacement%22%3A%22header%22%2C%22sessionKey%22%3A%22X-Upload-Token%22%2C%22seqPlacement%22%3A%22query%22%2C%22seqKey%22%3A%22chunk_id%22%2C%22xPaddingHeader%22%3A%22X-Client-Version%22%2C%22xPaddingKey%22%3A%22hash%22%2C%22xPaddingMethod%22%3A%22tokenish%22%2C%22xPaddingObfsMode%22%3Atrue%2C%22xPaddingPlacement%22%3A%22queryInHeader%22%2C%22noGRPCHeader%22%3Atrue%2C%22noSSEHeader%22%3Atrue%7D&host=v-cdn.layeriq.ru&allowinsecure=0&type=xhttp&sni=v-cdn.layeriq.ru#Белые Списки 1
-
-vless://ad584b51-0b6e-4fb8-973e-da25081c10c7@pro-ru-213.emrata.top:443?security=reality&encryption=none&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=eh.vk.ru#Россия 2
-
-vless://56936a8b-471b-47ee-8087-2bb93f0495d2@pro-ru-213.emrata.top:443?security=reality&encryption=none&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=eh.vk.ru#Россия 3
-
-vless://a9f9bbcf-c3e1-4b4a-a465-0ff340c953c7@ru-84.monkeyvillage.pro:443?security=reality&encryption=none&pbk=u918pQoBaR_OKVik9dhLdqhTWDpyWdh84MjukzFCZio&fp=firefox&allowinsecure=0&type=raw&flow=xtls-rprx-vision&sni=ads.x5.ru&sid=c6d0b2fa72eb6389#Россия 4
+vless://910776af-dce0-425d-ae28-4fb154b9f7c2@217.16.29.31:65535?security=reality&encryption=none&pbk=MAsHVMzSDwqVpFoCqpxPSjLeQECxlWiHdpaQKRWq3AM&headerType=none&fp=edge&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=495739b968708ab7#%F0%9F%87%B7%F0%9F%87
+vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&alpn=h2&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#%F0%9F%87%AB%F0%9F%87%AE+%7C
+vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#%F0%9F%87%B7%F0%9F%87%BA+LTE
+vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&alpn=h2&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#0009
+vless://a88ea8bf-7001-4e29-a9bb-379f6778195c@178.250.243.230:9823?security=reality&encryption=none&pbk=iNnoaSfyKvdo5kp5znHSGFNqFxNhS0ormvHHHwsUSTM&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=0123456789abcdef#%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+1
+vless://fcc38fdc-ef0a-46f3-a30a-cd3de28d3aee@91.218.231.77:8443?security=reality&encryption=none&pbk=G32LMxR1YPLvXDkuu3uMUISFF5hxLiVV2Hv0mPQqlG0&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=1eabae8c#%F0%9F%87%B7%F0%9F%87%BA++Russia
+vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&alpn=h2&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#%F0%9F%87%AB%F0%9F%87%AE+%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F+%7C+LTE
+vless://fcc38fdc-ef0a-46f3-a30a-cd3de28d3aee@91.218.231.77:8443?security=reality&encryption=none&pbk=G32LMxR1YPLvXDkuu3uMUISFF5hxLiVV2Hv0mPQqlG0&headerType=none&fp=qq&allowinsecure=1&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=1eabae8c#008
+vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#%F0%9F%87%AB%F0%9F%87%AE+%232+LTE
+vless://fcc38fdc-ef0a-46f3-a30a-cd3de28d3aee@178.250.242.191:443?security=reality&encryption=none&pbk=iySRon-cAj51jnuKEK7CeNJi-dH3VkGH7o-wF5-iG2k&headerType=none&fp=qq&allowinsecure=1&type=tcp&flow=xtls-rprx-vision&sni=api-dev-omni.x5.ru&sid=af82ffeb#999
+vless://dbc84de2-e7eb-4079-a413-7b392ef3597b@91.231.236.51:443?mode=packet-up&path=%2Fstatic%2FgetFile%2Fvideo%2Fsegment.ts&security=tls&encryption=none&alpn=h2,http/1.1&extra=%7B%22mode%22%3A%22packet-up%22%2C%22noSSEHeader%22%3Atrue%2C%22path%22%3A%22%2Fstatic%2FgetFile%2Fvideo%2Fsegment.ts%22%2C%22scMaxBufferedPosts%22%3A30.0%2C%22scMaxConcurrentPosts%22%3A%22100-150%22%2C%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMinPostsIntervalMs%22%3A%2210%22%2C%22seqKey%22%3A%22chunk_id%22%2C%22seqPlacement%22%3A%22query%22%2C%22sessionIDKey%22%3A%22Session-ID%22%2C%22sessionIDLength%22%3A%2216-32%22%2C%22sessionIDTable%22%3A%22Base62%22%2C%22uplinkHTTPMethod%22%3A%22GET%22%2C%22xmux%22%3A%7B%22cMaxLifetimeMs%22%3A%2260000-300000%22%2C%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hKeepAlivePeriod%22%3A0.0%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22maxConcurrency%22%3A%2216-32%22%2C%22maxConnections%22%3A0.0%7D%2C%22xPaddingHeader%22%3A%22File-ID%22%2C%22xPaddingKey%22%3A%22pid%22%2C%22xPaddingMethod%22%3A%22tokenish%22%2C%22xPaddingObfsMode%22%3Atrue%2C%22xPaddingPlacement%22%3A%22query%22%7D&host=1z3hx63qtu.a.trbcdn.net&fp=firefox&allowinsecure=0&type=xhttp&sni=1z3hx63qtu.a.trbcdn.net#%F0%9F%87%AA%F0%9F%87%BALTE
 
