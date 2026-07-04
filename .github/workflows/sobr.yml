@@ -1,0 +1,56 @@
+name: Update HAPP VPN Subscriptions
+
+on:
+  schedule:
+    - cron: '0 3 * * *'    # каждый день в 3:00 UTC (можно изменить)
+  workflow_dispatch:       # можно запускать вручально
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq
+
+      - name: Download decoder
+        run: |
+          curl -L -o decoder https://github.com/amurcanov/happ-decrypt-universal/releases/latest/download/linux-x64_x86
+          chmod +x decoder
+
+      - name: Scrape Telegram and decode
+        run: |
+          # Скачиваем страницу канала
+          curl -s "https://t.me/s/happvpn" -o channel.html
+
+          # Ищем happ://crypt5/... (берём последние 2-3)
+          grep -oE 'happ://crypt5/[A-Za-z0-9+/=]+' channel.html | tail -n 5 > links.txt
+
+          echo "Найдено ссылок: $(wc -l < links.txt)"
+
+          # Очищаем старый файл
+          > sobr.txt
+
+          # Расшифровываем каждую
+          while IFS= read -r link; do
+            if [ -n "$link" ]; then
+              echo "=== Расшифровка: $link ===" >> sobr.txt
+              ./decoder "$link" >> sobr.txt 2>&1
+              echo -e "\n\n" >> sobr.txt
+            fi
+          done < links.txt
+
+          echo "Обновление завершено $(date)" >> sobr.txt
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sobr.txt
+          git commit -m "Автообновление подписок $(date +'%Y-%m-%d %H:%M')" || echo "Нет изменений"
+          git push
