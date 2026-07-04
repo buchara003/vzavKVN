@@ -2,8 +2,8 @@ name: Update HAPP VPN Subscriptions
 
 on:
   schedule:
-    - cron: '0 3 * * *'    # каждый день в 3:00 UTC (можно изменить)
-  workflow_dispatch:       # можно запускать вручально
+    - cron: '0 4 * * *'   # каждый день в \~7:00 по Москве
+  workflow_dispatch:
 
 jobs:
   update:
@@ -13,44 +13,51 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install tools
         run: |
           sudo apt-get update
           sudo apt-get install -y curl jq
 
-      - name: Download decoder
+      - name: Download HAPP decoder
         run: |
-          curl -L -o decoder https://github.com/amurcanov/happ-decrypt-universal/releases/latest/download/linux-x64_x86
-          chmod +x decoder
+          curl -L -o decoder \
+            https://github.com/amurcanov/happ-decrypt-universal/releases/download/v1.0.0/linux-x64_x86 || \
+            echo "Не удалось скачать decoder"
+          chmod +x decoder || true
 
-      - name: Scrape Telegram and decode
+      - name: Scrape & Decode
         run: |
-          # Скачиваем страницу канала
-          curl -s "https://t.me/s/happvpn" -o channel.html
+          curl -s -H "User-Agent: Mozilla/5.0" "https://t.me/s/happvpn" -o channel.html
 
-          # Ищем happ://crypt5/... (берём последние 2-3)
-          grep -oE 'happ://crypt5/[A-Za-z0-9+/=]+' channel.html | tail -n 5 > links.txt
+          # Более точный поиск crypt5 ссылок
+          grep -oE 'happ://crypt5/[A-Za-z0-9+/=]+' channel.html | tail -n 6 > links.txt
 
-          echo "Найдено ссылок: $(wc -l < links.txt)"
+          echo "=== Обновление от $(date) ===" > sobr.txt
+          echo "Найдено ссылок: $(wc -l < links.txt)" >> sobr.txt
+          echo "" >> sobr.txt
 
-          # Очищаем старый файл
-          > sobr.txt
+          if [ ! -f decoder ]; then
+            echo "Decoder не скачался! Используем запасной метод." >> sobr.txt
+          else
+            while IFS= read -r link || [ -n "$link" ]; do
+              if [[ $link == happ://crypt5/* ]]; then
+                echo "🔓 Расшифровываем: ${link:0:60}..." >> sobr.txt
+                ./decoder "$link" >> sobr.txt 2>&1 || echo "Ошибка декодирования" >> sobr.txt
+                echo -e "\n----------------------------------------\n" >> sobr.txt
+              fi
+            done < links.txt
+          fi
 
-          # Расшифровываем каждую
-          while IFS= read -r link; do
-            if [ -n "$link" ]; then
-              echo "=== Расшифровка: $link ===" >> sobr.txt
-              ./decoder "$link" >> sobr.txt 2>&1
-              echo -e "\n\n" >> sobr.txt
-            fi
-          done < links.txt
+          echo "Готово. Последнее обновление: $(date)" >> sobr.txt
 
-          echo "Обновление завершено $(date)" >> sobr.txt
-
-      - name: Commit and push changes
+      - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add sobr.txt
-          git commit -m "Автообновление подписок $(date +'%Y-%m-%d %H:%M')" || echo "Нет изменений"
-          git push
+          if git diff --staged --quiet; then
+            echo "Нет изменений"
+          else
+            git commit -m "Автообновление подписок $(date +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
