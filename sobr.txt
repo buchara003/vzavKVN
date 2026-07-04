@@ -1,0 +1,88 @@
+=== Обновление от Sat Jul  4 16:47:19 UTC 2026 ===
+Найдено ссылок: 6
+
+🔓 Расшифровываем: happ://crypt5/fzvdnNnwIxNZG9r8uxWhgrqA24fZYN0AFqt6eLPdt8VdeF...
+
+Input
+  mode        : crypt5
+  payload len : 958
+  marker      : vdfzfoff
+
+Error
+  crypt5 segment length is missing
+
+Ошибка декодирования
+
+----------------------------------------
+
+🔓 Расшифровываем: happ://crypt5/fzvdaGELvId7fI8VzoGa7HGo22Gkn30K9i0VPBy3a8SDN7...
+
+Input
+  mode        : crypt5
+  payload len : 938
+  marker      : vdfzfoff
+
+Error
+  crypt5 segment length is missing
+
+Ошибка декодирования
+
+----------------------------------------
+
+🔓 Расшифровываем: happ://crypt5/fzvdUPWEPTpl8TEJQSoPdGyg24MRNu0bbXU1JVc+Vf2KH1...
+
+Input
+  mode        : crypt5
+  payload len : 958
+  marker      : vdfzfoff
+
+Error
+  crypt5 segment length is missing
+
+Ошибка декодирования
+
+----------------------------------------
+
+🔓 Расшифровываем: happ://crypt5/fzvdlVDchtZZ4vp1TYBPZs9u22ZE6k0aPwD44l0E3yhtcp...
+
+Input
+  mode        : crypt5
+  payload len : 938
+  marker      : vdfzfoff
+
+Error
+  crypt5 segment length is missing
+
+Ошибка декодирования
+
+----------------------------------------
+
+🔓 Расшифровываем: happ://crypt5/fzvdUPWEPTpl8TEJQSoPdGyg24MRNu0bbXU1JVc+Vf2KH1...
+
+Input
+  mode        : crypt5
+  payload len : 958
+  marker      : vdfzfoff
+
+Error
+  crypt5 segment length is missing
+
+Ошибка декодирования
+
+----------------------------------------
+
+🔓 Расшифровываем: happ://crypt5/fzvdlVDchtZZ4vp1TYBPZs9u22ZE6k0aPwD44l0E3yhtcp...
+
+Input
+  mode        : crypt5
+  payload len : 938
+  marker      : vdfzfoff
+
+Error
+  crypt5 segment length is missing
+
+Ошибка декодирования
+
+----------------------------------------
+
+Готово. Последнее обновление: Sat Jul  4 16:47:19 UTC 2026
