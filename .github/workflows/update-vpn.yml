@@ -25,10 +25,9 @@ jobs:
           echo "# Last update: $(date -u +'%Y-%m-%d %H:%M UTC')" >> subscriptions.txt
           echo "" >> subscriptions.txt
           
-          # Берём последние 4 гиста
-          curl -s "https://api.github.com/users/$USER/gists?per_page=4" > gists.json
-          
-          jq -r '.[].files | to_entries[] | .value.raw_url' gists.json | while read -r raw_url; do
+          # Берём последние 4 гиста и сразу обрабатываем
+          curl -s "https://api.github.com/users/$USER/gists?per_page=4" | \
+          jq -r '.[].files | to_entries[] | .value.raw_url' | while read -r raw_url; do
             if [ -n "$raw_url" ]; then
               echo "→ Fetching: $raw_url"
               echo "=== New configs from gist ===" >> subscriptions.txt
