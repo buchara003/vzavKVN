@@ -1,5 +1,6 @@
 import os
 import re
+import base64
 import requests
 
 API_KEY = os.environ["HAPPY_API_KEY"]
@@ -18,11 +19,11 @@ def get_last_links():
     links = list(dict.fromkeys(links))
 
     if not links:
-        raise Exception("Не найдено ни одного happ://crypt5")
+        raise Exception("Не найдено ни одной happ://crypt5 ссылки")
 
     print(f"Найдено {len(links)} ссылок")
 
-    return links[-3:]
+    return links[-2:]
 
 
 def decrypt(link):
@@ -55,37 +56,53 @@ def download(url):
     print(url)
 
     r = requests.get(url, timeout=30)
-
     r.raise_for_status()
 
-    print("Размер:", len(r.text), "символов")
+    print(f"Размер: {len(r.text)} символов")
 
-    return r.text
+    return r.text.strip()
 
 
 def main():
 
-    result = []
+    encoded_subs = []
+    decoded_subs = []
 
     links = get_last_links()
 
     for link in links:
-
         try:
+            sub_url = decrypt(link)
 
-            sub = decrypt(link)
+            encoded = download(sub_url)
 
-            text = download(sub)
+            encoded_subs.append(encoded)
 
-            result.append(text)
+            try:
+                decoded = base64.b64decode(encoded).decode(
+                    "utf-8",
+                    errors="ignore"
+                )
+
+                decoded_subs.append(decoded)
+
+                print("Подписка успешно декодирована")
+
+            except Exception as e:
+                print("Ошибка декодирования:", e)
 
         except Exception as e:
             print("Ошибка:", e)
 
     with open("sobr.txt", "w", encoding="utf-8") as f:
-        f.write("\n\n".join(result))
+        f.write("\n\n".join(encoded_subs))
+
+    with open("sobr2.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(decoded_subs))
 
     print("Готово.")
+    print(f"Сохранено Base64 подписок: {len(encoded_subs)}")
+    print(f"Сохранено декодированных подписок: {len(decoded_subs)}")
 
 
 if __name__ == "__main__":
