@@ -1,88 +1,19 @@
-=== Обновление от Sat Jul  4 16:47:19 UTC 2026 ===
-Найдено ссылок: 6
+=== Обновление от Sat Jul  4 16:51:50 2026 ===
+Найдено ссылок: 4
 
-🔓 Расшифровываем: happ://crypt5/fzvdnNnwIxNZG9r8uxWhgrqA24fZYN0AFqt6eLPdt8VdeF...
+🔓 happ://crypt5/fzvd7fsU4NPJ1CMMhNlNIuEG22EU/Q0BynRJHPZ9gDvUXp/rwYmALv4UxW7HpklP5hivCbOhaiqmCE/iLq5dd9FC3BTJyJ3z1KzxHBXG1xVy1ElefjVM+pe700L+rO7jEpMQI+m0SYX5cQH1f4uo+gt6fOLt9zwXYl+DhjLM/scwpFoJknq298We47K7xDiBMeLsZd+nWC73cR5vmlXqLqePDXnb1MNz7kO1dnITmPmu4NX+MzvaVB+12zw=fZBNiKlDyr/dSE235DYTvpGG03SlLSD5LTVObX+GS/eYwrUHoaObeHBkre487ayLPwMwl33qKYzPZqcYb9F58lanX0S+gHssKYwJgUJp9ws1hqWIiYrFHxFlHvIYawjZjoVddtWyhSQcDjacp8BrQw1w34mDvVCotKVs2BzrlT+xApTZWJ978ny07rNtNj+zn6yrFH5E65h+t8GZVLUbL67w81q45S+thI+ynxEJBUlFTXQvAEoKBh7iaTxj3H8+LFBt9gTRFPh8lY1ykoxc/ez3RnkQabpQ2s+5a5HK/8vqIA1pg+wzkNfmKO5Kbdwge/i4uhXYu0sEieBI6rgtJlnXEhwb9W//cbMcmjwosx5OZPCk5FxKgoZ9yHleY7QxayS/IBiJ++iLK6OZoukfFnrh54/g6mpiPFZ4oGXpA7snR4WFQ1UXWhkLqT5zaOEoqXFhI1/RHkbiwwjl0k7RhMpWSKTj66tQguLeNmX5Oi44yQdlRcmI+Lotgyy92y2igLV6qxRdX/gavws9jRE57kkaO77pMQEJ6JOvcrSWOGuTvXauwvCOWBXo402bCNQqSlPBrt3CzsXsI+yhMtmlW6M39qZTDaOScZkRSwuwG/38e5qC/8rasbuNVnAV/25PAENJJUQ6GAu25aBBHWDsLWRFMVzPZplkyTp1e6Y9foM=ff
 
-Input
-  mode        : crypt5
-  payload len : 958
-  marker      : vdfzfoff
+================================================================================
 
-Error
-  crypt5 segment length is missing
+🔓 happ://crypt5/fzvdaGELvId7fI8VzoGa7HGo22Gkn30K9i0VPBy3a8SDN7+3T0JmjaSevpLWIptCCVXPVs4doN7EuR/1R6oCYcGOoGWSwEXATxQ65gj4zoxdec9upwDRYptR+lB0rJ19NLTtq13jybJ8U6JHNpK+k8e3t0eME2YmsnIDzPTNnQg34/cfxpDdPZ56ZNkJxukWdPzilERQY1Rt7DASjV2GGxjt/lmYWLrlzCWfp2DxJ5pPQWuvqrbQQ6ETuAc=GneMAPAtYmEKLC/dLOCtRzLdsPn+HTdJPFeZYX8A3ZsMAIWMzHezgzbD1pZpfHsSc3xzK431xN5tHt5Bwb1tY7K3yBGndlVaj7I6SELesQw39jSgSASF0cjb1MofK6hRY4ucrs/3XWXJHdVNIpeIXz9cFapImtc9QpdGolJHnnfWgqjEwlhrNoDcDfRgzN2TRxoXCT5KsjXd+KTYlHDUpSxhC2XSS2ykHO9E6WcL7DzKv4JMHgO66wArH0ezarInGwIt0vodXF3VijY1Rb374ItOBIYHuPAGvU6ks2BELzawk3J7dwOQAeLxDzrlXmPjbAhM292RgcTI6PiPZspOJmzY3kMiMnYP+HicVyVJRqQlJFNG4W7X64kGZn2J5D/lrVcuKh2OyFaZHsQMu/aOkkBcnphHk+CY0bDJrv2FsLLDX5Z2r2H6oyjTxNJzYUyHta5AKBJM72HxNl4gmwKkZ9noGoilCgvydah3DZq6p4H6T77hB8F8WGCLxDSfRZ+MvB0gtXGcfk2937DHt/iKYFLcO2SLRiDhucvLmAeYGH3KHvfumoRsV2ALegP7uq7UafMPn8j9zMUZxbNvwjAGyIHQUU5ioR046H1rqFxhaTtus6G6t/iV2KjKaKTnxEaOt8DcDvdQmWKIGZrfBYxobmJtKW7OmbB1GLI39U/AfoQ=ff
 
-Ошибка декодирования
+================================================================================
 
-----------------------------------------
+🔓 happ://crypt5/fzvdUPWEPTpl8TEJQSoPdGyg24MRNu0bbXU1JVc+Vf2KH1S8ecCjgEqXk/Av4keWQADw4o2KFhoww6z3uZQnhVbiZH1CSGgpl4UAxjoiB1Pz08Be4+lytdWaGGBhPqgUYnUE1eQr1CT5WIvOKX8vKOFluqbLayojrLD2fmINGc9IpjaGwkRRdaWX4fZ+8dB6RWxA37KbX66oDazx/OG6H1+D+J+mddd2iA5MYeYibpV61S09KUA+W9FF/0de/tvGx02dtuABYbo7EKX1VZryLb8odn/v0nEVWi1DxTX4IoZiTJDJ+q7Af1owZ5BFPDkrR64+tpqux9Sqp4FohekjN+pQKrR28XP3kcRkqTQZheUFPSSuVL46V3tq1OzD5z2itPkL4VI/XNKMVHuNqi0MzDWnDSKbYQ8vKmXhr4fxHIGIeK4XYwgu92lLFd4T4lb+diS0+rIpx3L0NKvLPGJ2XNS0XvcZvf3M1QWo5PWaPTyc+X6hpsRuUVxoZRWp+n2yNhlU09Gmzp0mmP22lhtQCwW9Itb++o0rXa3oSrLwIa+imB/vZHSx7R/Pr9CS453JQL7OORj7Kt8psKgcibyEWLSYG8MfjdCAbSkRJDsrLKIhQCgig3uiDirugMVgu7JXesnjAFK8TuLbXnPL7m8MDNBcNHITIpc7hWsP7mOyZkzeIkYeFamvORFSAJ+RDNKVdRv59bax9YRmVEjEfZSako4hYd5MXvb9R8D7VeVW6xX9+/oBuXoqe+12bd23ksbdMosAYRS1C23GGdsq9SSg6LMO3p3dhbQnIAEtiYDGjWGizT3C9vLc1Y5xUujKVmjE1keEF1acyXsQUvWtTYAHP3QmMNqwSjl07YMlVo531uJpgjpHAQzC7FBSqQx6fNytA87tbaI3w8lTLGp0uV/IrdG7KbaSdCll+B1ywpt6999VAK5wc9tTDl9YfoU=ff
 
-🔓 Расшифровываем: happ://crypt5/fzvdaGELvId7fI8VzoGa7HGo22Gkn30K9i0VPBy3a8SDN7...
+================================================================================
 
-Input
-  mode        : crypt5
-  payload len : 938
-  marker      : vdfzfoff
+🔓 happ://crypt5/fzvdlVDchtZZ4vp1TYBPZs9u22ZE6k0aPwD44l0E3yhtcpIZrmunC3Bs9lkbJNbmNZL2snvlqWvdCAJ0ppQj317A50dyLZI40hqDrUgWfU2mAuIXiLFvYRJzcfBcymoOndUiGAlQdHnAe5uMULwx3Q6E5zsWrPFgoojmEdywvxa01jb88OC5doQbEAkoFEivHGzimdnT17prUdRqMVSNGlkKkMvWlh8c4Hou0WvTn4iHT/UWqujTyFdTJco=xPlG2kmTAv6JdpBmWbkwhNoDyzDXebAJOUkOeAO5CcKhPfZ08DE4FW7DdiblbXEkCqVbX1nvWf8Nl177h0MyRfLcEIElARFlwmMwbJC0p7xfF571RgLkK+9QrXksiQFGHLg4jr3cKCCFsjxwxjpVu25HNRQAj027Lb4S5RJlHCfQJ7lN4IeNh4O2yuUyezJ0J1xZR2lDTn1N+l+qCL/LNyxhMsE9eOulpZAY8AeI3Ni8ZzEHRhuT21w5QS4Nw29m6yA0o0/E+ilxOrJhTtzbYiccmIZwJpjap1cYN6u6CBELi3F2Go/HmzGsXggB009FuMKwgjWJQDSU5nM3hSHYbG48klcMR0FzU6C8q8Q6DKnEA1xqf14sFOGq+W3B0awbXrEkBoA2d7YclS3v01ZIlOhjp97DCVzXaYwS4sCHGdAULPEbsWV6RtBhkA7EZksH/bRtl4sNvi9UlUn/I3tpXraP3W+Gd0EOf85HgBs+neO6VD8aH+792EtPD8y9iAeZLGbSSH6KPWHEAWzBP7a8fBeOrURKdiVBeOD7koWnniqH+hTkHGCrIop638diQFZnRRPsilySm676FWrNJgh1edIw0bf6ZAxQngMPmiuBADkCmDuc/AANiVLXQZ7laujNlgJ1TroFeyGZ8xAmp7lpwCLFr+kbsY9ZtJVJ/bbjfoQ=ff
 
-Error
-  crypt5 segment length is missing
+================================================================================
 
-Ошибка декодирования
-
-----------------------------------------
-
-🔓 Расшифровываем: happ://crypt5/fzvdUPWEPTpl8TEJQSoPdGyg24MRNu0bbXU1JVc+Vf2KH1...
-
-Input
-  mode        : crypt5
-  payload len : 958
-  marker      : vdfzfoff
-
-Error
-  crypt5 segment length is missing
-
-Ошибка декодирования
-
-----------------------------------------
-
-🔓 Расшифровываем: happ://crypt5/fzvdlVDchtZZ4vp1TYBPZs9u22ZE6k0aPwD44l0E3yhtcp...
-
-Input
-  mode        : crypt5
-  payload len : 938
-  marker      : vdfzfoff
-
-Error
-  crypt5 segment length is missing
-
-Ошибка декодирования
-
-----------------------------------------
-
-🔓 Расшифровываем: happ://crypt5/fzvdUPWEPTpl8TEJQSoPdGyg24MRNu0bbXU1JVc+Vf2KH1...
-
-Input
-  mode        : crypt5
-  payload len : 958
-  marker      : vdfzfoff
-
-Error
-  crypt5 segment length is missing
-
-Ошибка декодирования
-
-----------------------------------------
-
-🔓 Расшифровываем: happ://crypt5/fzvdlVDchtZZ4vp1TYBPZs9u22ZE6k0aPwD44l0E3yhtcp...
-
-Input
-  mode        : crypt5
-  payload len : 938
-  marker      : vdfzfoff
-
-Error
-  crypt5 segment length is missing
-
-Ошибка декодирования
-
-----------------------------------------
-
-Готово. Последнее обновление: Sat Jul  4 16:47:19 UTC 2026
