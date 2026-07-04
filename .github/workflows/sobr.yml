@@ -2,36 +2,45 @@ name: HAPP Decoder
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # каждый день в 9:00 МСК
+    - cron: "0 6 * * *"   # каждый день в 06:00 UTC (09:00 МСК летом)
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   decode:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Setup Python + Playwright
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Install Playwright
+      - name: Install dependencies
         run: |
-          python -m pip install playwright requests
-          playwright install --with-deps chromium
+          python -m pip install --upgrade pip
+          pip install requests
 
       - name: Run decoder
+        env:
+          HAPPY_API_KEY: ${{ secrets.HAPPY_API_KEY }}
         run: python update.py
 
-      - name: Commit & Push
+      - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add sobr.txt
-          if git diff --staged --quiet; then
+
+          if git diff --cached --quiet; then
             echo "Нет изменений"
           else
-            git commit -m "Авто-расшифровка HAPP $(date +'%Y-%m-%d %H:%M')"
+            git commit -m "Обновление конфигов $(date +'%Y-%m-%d %H:%M')"
             git push
           fi
