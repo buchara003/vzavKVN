@@ -1,8 +1,9 @@
-name: HAPP Decoder
+name: pahh dec
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # каждый день в 06:00 UTC (09:00 МСК летом)
+    - cron: "0 9 * * *"
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -41,6 +42,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Нет изменений"
           else
-            git commit -m "Обновление конфигов $(date +'%Y-%m-%d %H:%M')"
+            git commit -m "Update subscription $(date +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
