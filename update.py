@@ -22,7 +22,7 @@ def get_last_links():
 
     print(f"Найдено {len(links)} ссылок")
 
-    return links[-2:]
+    return links[-3:]
 
 
 def decrypt(link):
