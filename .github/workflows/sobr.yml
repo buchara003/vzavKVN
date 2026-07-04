@@ -1,46 +1,92 @@
-name: HAPP Decoder
+import os
+import re
+import requests
 
-on:
-  schedule:
-    - cron: "0 6 * * *"   # каждый день в 06:00 UTC (09:00 МСК летом)
-  workflow_dispatch:
+API_KEY = os.environ["HAPPY_API_KEY"]
 
-permissions:
-  contents: write
+TELEGRAM_URL = "https://t.me/s/happvpn"
+API_URL = "https://happy-decoder.cc/api/v1/decrypt"
 
-jobs:
-  decode:
-    runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+def get_last_links():
+    print("Получаю Telegram...")
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+    html = requests.get(TELEGRAM_URL, timeout=20).text
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+    links = re.findall(r"happ://crypt5/[A-Za-z0-9+/=]+", html)
 
-      - name: Run decoder
-        env:
-          HAPPY_API_KEY: ${{ secrets.HAPPY_API_KEY }}
-        run: python update.py
+    links = list(dict.fromkeys(links))
 
-      - name: Commit and Push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    if not links:
+        raise Exception("Не найдено ни одного happ://crypt5")
 
-          git add sobr.txt
+    print(f"Найдено {len(links)} ссылок")
 
-          if git diff --cached --quiet; then
-            echo "Нет изменений"
-          else
-            git commit -m "Обновление конфигов $(date +'%Y-%m-%d %H:%M')"
-            git push
-          fi
+    return links[-2:]
+
+
+def decrypt(link):
+    print("Расшифровываю:")
+    print(link[:80] + "...")
+
+    r = requests.post(
+        API_URL,
+        headers={
+            "Authorization": f"Bearer {API_KEY}"
+        },
+        json={
+            "url": link
+        },
+        timeout=20,
+    )
+
+    r.raise_for_status()
+
+    data = r.json()
+
+    if "error" in data:
+        raise Exception(data["error"])
+
+    return data["decryptedUrl"]
+
+
+def download(url):
+    print("Скачиваю подписку...")
+    print(url)
+
+    r = requests.get(url, timeout=30)
+
+    r.raise_for_status()
+
+    print("Размер:", len(r.text), "символов")
+
+    return r.text
+
+
+def main():
+
+    result = []
+
+    links = get_last_links()
+
+    for link in links:
+
+        try:
+
+            sub = decrypt(link)
+
+            text = download(sub)
+
+            result.append(text)
+
+        except Exception as e:
+            print("Ошибка:", e)
+
+    with open("sobr.txt", "w", encoding="utf-8") as f:
+        f.write("\n\n".join(result))
+
+    print("Готово.")
+
+
+if __name__ == "__main__":
+    main()
