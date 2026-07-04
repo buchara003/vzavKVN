@@ -2,7 +2,7 @@ name: Update HAPP VPN Subscriptions
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # каждый день в \~7:00 по Москве
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,45 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Install tools
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl jq
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Download HAPP decoder
+      - name: Install dependencies
         run: |
-          curl -L -o decoder \
-            https://github.com/amurcanov/happ-decrypt-universal/releases/download/v1.0.0/linux-x64_x86 || \
-            echo "Не удалось скачать decoder"
-          chmod +x decoder || true
+          python -m pip install requests beautifulsoup4 selenium webdriver-manager
 
       - name: Scrape & Decode
         run: |
-          curl -s -H "User-Agent: Mozilla/5.0" "https://t.me/s/happvpn" -o channel.html
-
-          # Более точный поиск crypt5 ссылок
-          grep -oE 'happ://crypt5/[A-Za-z0-9+/=]+' channel.html | tail -n 6 > links.txt
-
-          echo "=== Обновление от $(date) ===" > sobr.txt
-          echo "Найдено ссылок: $(wc -l < links.txt)" >> sobr.txt
-          echo "" >> sobr.txt
-
-          if [ ! -f decoder ]; then
-            echo "Decoder не скачался! Используем запасной метод." >> sobr.txt
-          else
-            while IFS= read -r link || [ -n "$link" ]; do
-              if [[ $link == happ://crypt5/* ]]; then
-                echo "🔓 Расшифровываем: ${link:0:60}..." >> sobr.txt
-                ./decoder "$link" >> sobr.txt 2>&1 || echo "Ошибка декодирования" >> sobr.txt
-                echo -e "\n----------------------------------------\n" >> sobr.txt
-              fi
-            done < links.txt
-          fi
-
-          echo "Готово. Последнее обновление: $(date)" >> sobr.txt
+          python update.py
 
       - name: Commit & Push
         run: |
