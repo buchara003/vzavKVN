@@ -19,13 +19,14 @@ jobs:
 
       - name: Combine all gists into one subscription
         run: |
-          USER="j80547013-max"
+          USER="tghappcluchi"
           
-          echo "# Combined VPN Subscription from @j80547013-max" > subscriptions.txt
+          echo "# Combined VPN Subscription from @tghappcluchi" > subscriptions.txt
           echo "# Last update: $(date -u +'%Y-%m-%d %H:%M UTC')" >> subscriptions.txt
           echo "" >> subscriptions.txt
           
-          curl -s "https://api.github.com/users/$USER/gists?per_page=3" > gists.json
+          # Берём последние 4 гиста
+          curl -s "https://api.github.com/users/$USER/gists?per_page=4" > gists.json
           
           jq -r '.[].files | to_entries[] | .value.raw_url' gists.json | while read -r raw_url; do
             if [ -n "$raw_url" ]; then
