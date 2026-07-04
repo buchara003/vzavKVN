@@ -1,29 +1,28 @@
-name: Update HAPP VPN Subscriptions
+name: HAPP Decoder
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 6 * * *'   # каждый день в 9:00 МСК
   workflow_dispatch:
 
 jobs:
-  update:
+  decode:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Setup Python + Playwright
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install Playwright
         run: |
-          python -m pip install requests beautifulsoup4 selenium webdriver-manager
+          python -m pip install playwright requests
+          playwright install --with-deps chromium
 
-      - name: Scrape & Decode
-        run: |
-          python update.py
+      - name: Run decoder
+        run: python update.py
 
       - name: Commit & Push
         run: |
@@ -33,6 +32,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Нет изменений"
           else
-            git commit -m "Автообновление подписок $(date +'%Y-%m-%d %H:%M UTC')"
+            git commit -m "Авто-расшифровка HAPP $(date +'%Y-%m-%d %H:%M')"
             git push
           fi
