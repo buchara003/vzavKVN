@@ -1,32 +1,24 @@
 # 6pc — Объединённые подписки
 # Источник: https://github.com/po5p/hpc
-# Обновлено: 2026-07-04 15:52 UTC
+# Обновлено: 2026-07-05 06:39 UTC
 # Всего файлов: 10
 
 
-#profile-title: БС🏳⚠️
+#profile-title: БС🏳❗
 #profile-update-interval: 1
 #support-url: https://t.me/freevpnconfigh
 #profile-web-page-url: https://t.me/freevpnconfigh
 #announce: ВНИМАНИЕ: ИСПОЛЬЗУЙТЕ ПОДПИСКУ ТОЛЬКО ДЛЯ ОБХОДА БЕЛЫХ СПИСКОВ. Бесплатные конфигурации ➡️@freevpnconfigh⬅️
 
 
-vless://a2f1c3c9-2200-49cc-93a9-47a22e4fc47e@213.219.212.177:443?security=reality&encryption=none&pbk=POvnOAc0uakwEiACRDG0R4z8fO9_GPyh2Ozkd6VAOjU&headerType=none&fp=random&spx=%2F&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=api-maps.yandex.ru&sid=27e53bbcab7593d7#%F0%9F%87%A9%F0%9F%87%AA%F0%9F%9B%B0%EF%B8%8F+%D0%9E%D0%B1%D1%85%D0%BE%D0%B4+%D0%B1%D0%B5%D0%BB.+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2+%236
-vless://5bead282-fe56-40a9-a09b-065b78207842@ru1.lent.pro:443?security=reality&encryption=none&pbk=qKA6VHyCok50-RsGca0EjTJgWJqKb16K6C-dEEuBBiA&headerType=none&fp=chrome&spx=%2FIe2A6DYb3xyOIal&allowinsecure=0&type=tcp&sni=ya.ru&sid=e06dc9#%F0%9F%87%B7%F0%9F%87%BA%F0%9F%9B%B0%EF%B8%8F+%D0%9E%D0%B1%D1%85%D0%BE%D0%B4+%D0%B1%D0%B5%D0%BB.+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2+%2319
-vless://3455b5c1-81dc-4a55-827c-efff3e485011@sber.ru.xanka.best:443?mode=packet-up&path=%2Fapi-test&security=tls&encryption=none&alpn=h2&extra=%7B%22scMaxBufferedPosts%22%3A30.0%2C%22scMaxEachPostBytes%22%3A1.0E7%2C%22scMinPostsIntervalMs%22%3A30.0%2C%22uplinkHTTPMethod%22%3A%22OPTIONS%22%2C%22xPaddingHeader%22%3A%22X-Cache%22%2C%22xPaddingKey%22%3A%22dc%22%2C%22xPaddingMethod%22%3A%22tokenish%22%2C%22xPaddingObfsMode%22%3Atrue%2C%22xPaddingPlacement%22%3A%22queryInHeader%22%7D&host=sber.ru.xanka.best&fp=firefox&allowinsecure=0&type=xhttp&sni=sber.ru.xanka.best#%F0%9F%87%B7%F0%9F%87%BA%F0%9F%9B%B0%EF%B8%8F+%D0%9E%D0%B1%D1%85%D0%BE%D0%B4+%D0%B1%D0%B5%D0%BB.+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2+%231
-vless://58b700b0-0ee8-4bb1-9069-bdf347377f54@194.55.239.155:69?mode=auto&path=%2Fapi%2Fv1%2Fevents&security=none&encryption=none&host=ads.x5.ru&type=xhttp#%F0%9F%87%B7%F0%9F%87%BA%F0%9F%9B%B0%EF%B8%8F+%D0%9E%D0%B1%D1%85%D0%BE%D0%B4+%D0%B1%D0%B5%D0%BB.+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2+%235
-vless://ee7de6e8-e73d-4878-adaa-8a2e99dc768a@46.8.209.184:2099?security=reality&encryption=none&pbk=FTVQSLe_kSxKly4fa1JFkhYUzpJywK6HRC0xEk0BAlQ&headerType=none&fp=qq&spx=%2F&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=gate.esimpson.org&sid=1b73426e#%F0%9F%87%B5%F0%9F%87%B1%F0%9F%9B%B0%EF%B8%8F+%D0%9E%D0%B1%D1%85%D0%BE%D0%B4+%D0%B1%D0%B5%D0%BB.+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2+%2310
-
-vless://7cec3808-65d4-4dbd-941f-e9b640977071@cdn.stroimvmeste.icu:443?mode=auto&path=%2Fstart&security=tls&encryption=none&alpn=h2,http/1.1&host=cdn.stroimvmeste.icu&fp=chrome&allowinsecure=0&type=xhttp&sni=cdn.stroimvmeste.icu#%F0%9F%87%A9%F0%9F%87%AA%F0%9F%9B%B0%EF%B8%8F+%D0%9E%D0%B1%D1%85%D0%BE%D0%B4+%D0%B1%D0%B5%D0%BB.+%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2+%2313
-
-hysteria2://c059a786-3a03-4300-9ace-4f9cda0f360c@wlte.nimarko.org:8465?security=tls&fm=%7B%7D&allowinsecure=0&sni=itit.nimarko.org#Россия+1
-vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#Россия+2
-vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&alpn=h2&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#Россия+3
-vless://a88ea8bf-7001-4e29-a9bb-379f6778195c@178.250.243.230:9823?security=reality&encryption=none&pbk=iNnoaSfyKvdo5kp5znHSGFNqFxNhS0ormvHHHwsUSTM&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=0123456789abcdef#Россия+4
-vless://1ca60829-476f-Fade-b1b4-a42660c00159@81.163.22.19:443?mode=gun&security=tls&encryption=none&alpn=h2&authority=&fp=qq&allowinsecure=0&type=grpc&serviceName=&sni=emssq-ru-wl46sel.my-fade.cloud#Германия+1
-vless://dbc84de2-e7eb-4079-a413-7b392ef3597b@91.231.236.51:443?mode=packet-up&path=%2Fstatic%2FgetFile%2Fvideo%2Fsegment.ts&security=tls&encryption=none&alpn=h2,http/1.1&extra=%7B%22mode%22%3A%22packet-up%22%2C%22noSSEHeader%22%3Atrue%2C%22path%22%3A%22%2Fstatic%2FgetFile%2Fvideo%2Fsegment.ts%22%2C%22scMaxBufferedPosts%22%3A30.0%2C%22scMaxConcurrentPosts%22%3A%22100-150%22%2C%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMinPostsIntervalMs%22%3A%2210%22%2C%22seqKey%22%3A%22chunk_id%22%2C%22seqPlacement%22%3A%22query%22%2C%22sessionIDKey%22%3A%22Session-ID%22%2C%22sessionIDLength%22%3A%2216-32%22%2C%22sessionIDTable%22%3A%22Base62%22%2C%22uplinkHTTPMethod%22%3A%22GET%22%2C%22xmux%22%3A%7B%22cMaxLifetimeMs%22%3A%2260000-300000%22%2C%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hKeepAlivePeriod%22%3A0.0%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22maxConcurrency%22%3A%2216-32%22%2C%22maxConnections%22%3A0.0%7D%2C%22xPaddingHeader%22%3A%22File-ID%22%2C%22xPaddingKey%22%3A%22pid%22%2C%22xPaddingMethod%22%3A%22tokenish%22%2C%22xPaddingObfsMode%22%3Atrue%2C%22xPaddingPlacement%22%3A%22query%22%7D&host=1z3hx63qtu.a.trbcdn.net&fp=firefox&allowinsecure=0&type=xhttp&sni=1z3hx63qtu.a.trbcdn.net#Прочее+1
-vless://c31afc82-5b01-462c-bd62-bf403810961f@84.201.173.79:80?mode=gun&security=none&encryption=none&authority=&type=grpc&serviceName=grpc#Германия+2
-vless://612f6d1c-a551-45af-83b6-d8e3d0842bfb@194.55.239.186:67?security=reality&encryption=none&pbk=RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=nl-t3.vinnypuxtomoon.today&sid=c0d1d1776fed0f6d#Нидерланды+1
-vless://ee7de6e8-e73d-4878-adaa-8a2e99dc768a@46.8.209.184:2099?security=reality&encryption=none&pbk=FTVQSLe_kSxKly4fa1JFkhYUzpJywK6HRC0xEk0BAlQ&headerType=none&fp=firefox&spx=%2F&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=gate.esimpson.org&sid=1b73426e#Польша+1
-hysteria2://0dd50f72-bf39-4b59-b183-61b3fa52df57@46.254.18.107:443?security=tls&fm=%7B%7D&allowinsecure=0&sni=newlte.kihsuyhf8jkiugsxb.cfd#Нидерланды+2
+vless://05e203ad-d621-45f9-8582-132eea391b82@194.55.239.228:7443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=api-maps.yandex.ru&fp=qq&pbk=hlJpjNVBd0c3DP2ngqXoaKtgw-0p5PKj5eF9mO_Od3I&sid=45ba91f179ad1f26&allowinsecure=0&type=tcp&headerType=none#Россия+1
+vless://576f2ba5-87e3-4244-a9a7-a27abddcbb72@test.bay-glen.test-cdn-kkk.com:443?encryption=none&security=reality&sni=gazeta-business.ru&fp=edge&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=ads.x5.ru#Россия+2
+vless://150f8634-ae68-4a26-a3d0-853d3c523c15@185.229.9.229:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=api-maps.yandex.ru&fp=chrome&pbk=zMyJW8uYeZwurz4xCcnnPjYlCVP0nI5BDHp_0ZrxPjk&allowinsecure=1&type=tcp&headerType=none#Россия+3
+vless://05e203ad-d621-45f9-8582-132eea391b82@185.229.9.44:7443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=api-maps.yandex.ru&fp=chrome&pbk=hlJpjNVBd0c3DP2ngqXoaKtgw-0p5PKj5eF9mO_Od3I&sid=45ba91f179ad1f26&allowinsecure=0&type=tcp&headerType=none#Россия+4
+vless://612f6d1c-a551-45af-83b6-d8e3d0842bfb@194.55.239.186:67?flow=xtls-rprx-vision&encryption=none&security=reality&sni=nl-t3.vinnypuxtomoon.today&fp=firefox&pbk=RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go&sid=c0d1d1776fed0f6d&allowinsecure=1&type=tcp&headerType=none#Нидерланды+1
+vless://612f6d1c-a551-45af-83b6-d8e3d0842bfb@wl-rfx.vinnypuxtomoon.today:2053?flow=xtls-rprx-vision&encryption=none&security=reality&sni=ads.x5.ru&fp=firefox&pbk=ZiikoXPEZlf9t-VOWndK7xavwxvA1DAtuvfNr3qrrQM&sid=f29af27b8d30e0c9&allowinsecure=1&type=tcp&headerType=none#Германия+1
+vless://612f6d1c-a551-45af-83b6-d8e3d0842bfb@wl-rfx.vinnypuxtomoon.today:8443?encryption=none&security=reality&sni=ads.x5.ru&fp=chrome&pbk=ZiikoXPEZlf9t-VOWndK7xavwxvA1DAtuvfNr3qrrQM&sid=f29af27b8d30e0c9&allowinsecure=1&type=grpc&mode=gun&authority=&serviceName=grpc-64d582901517ae3f#Германия+2
+vless://7cec3808-65d4-4dbd-941f-e9b640977071@cdn.stroimvmeste.icu:443?encryption=none&security=tls&sni=cdn.stroimvmeste.icu&alpn=h2%2C%20http%2F1.1&fp=chrome&allowinsecure=0&type=xhttp&mode=auto&host=cdn.stroimvmeste.icu&path=%2Fstart#Германия+3
+vless://a88ea8bf-7001-4e29-a9bb-379f6778195c@178.250.243.230:9823?flow=xtls-rprx-vision&encryption=none&security=reality&sni=max.ru&fp=chrome&pbk=iNnoaSfyKvdo5kp5znHSGFNqFxNhS0ormvHHHwsUSTM&sid=0123456789abcdef&allowinsecure=0&type=tcp&headerType=none#Россия+5
+vless://ee7de6e8-e73d-4878-adaa-8a2e99dc768a@46.8.209.184:2099?flow=xtls-rprx-vision&encryption=none&security=reality&sni=gate.esimpson.org&fp=qq&pbk=FTVQSLe_kSxKly4fa1JFkhYUzpJywK6HRC0xEk0BAlQ&sid=1b73426e&spx=%2F&allowinsecure=0&type=tcp&headerType=none#Польша+1
 
