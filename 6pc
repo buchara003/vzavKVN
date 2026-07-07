@@ -1,6 +1,6 @@
 # 6pc — Объединённые подписки
 # Источник: https://github.com/po5p/hpc
-# Обновлено: 2026-07-07 06:45 UTC
+# Обновлено: 2026-07-07 17:03 UTC
 # Всего файлов: 10
 
 
@@ -8,23 +8,23 @@
 #profile-update-interval: 1
 #support-url: https://t.me/freevpnconfigh
 #profile-web-page-url: https://t.me/freevpnconfigh
-#announce: ВНИМАНИЕ: ИСПОЛЬЗОВАТТ ПОДПИСКУ ТОЛЬКО ДЛЯ ОБХОДА БЕЛЫХ СПИСКОВ. Бесплатные конфигурации ➡️@freevpnconfigh⬅️
+#announce: ВНИМАНИЕ: ИСПОЛЬЗОВАТь ПОДПИСКУ ТОЛЬКО ДЛЯ ОБХОДА БЕЛЫХ СПИСКОВ. Бесплатные конфигурации ➡️@freevpnconfigh⬅️
 
 
-vless://1ddf33c9-917f-4d3a-8a3e-a8f499a22d69@5.188.115.226:13443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=cdn.byteark.com&fp=firefox&pbk=N6RiU4XHQl31HeKmBNOFDypgfDqqshGa7zxfqe72hjk&sid=e42075de64c24511&spx=%2F&allowinsecure=0&type=tcp&headerType=none#Россия+1
-vless://15173b3d-22bf-5ac2-85ac-2bddaae12574@78.159.250.22:8443?encryption=none&security=reality&sni=yandex.ru&fp=chrome&pbk=k0bArveUYPbO0W53IQDSSJYKllFFQUnHmtA_WjJjvCc&sid=54d21365d229cc8b&spx=%2F&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=grpc#Россия+2
-vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.24:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&fp=firefox&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+3
-vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.105:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&fp=qq&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+4
-vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.14:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&fp=chrome&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+5
-vless://4c98cd68-3b00-4e76-b3c1-f0d44306b1ed@195.209.86.193:443?encryption=none&security=tls&sni=s81381.cdn.ngenix.net&alpn=http%2F1.1&fp=chrome&allowinsecure=0&type=ws&path=%2Fv1%2Fdata%2Fsync%2F#Эстония+1
-vless://3ea62c3f-44ff-43f2-929d-73d88eca9cb3@195.208.65.150:443?encryption=none&security=tls&sni=s46270.cdn.ngenix.net&alpn=http%2F1.1&fp=chrome&allowinsecure=0&type=ws&host=s46270.cdn.ngenix.net&path=%2Fv1%2Fdata%2Fsync%2F#Германия+1
-vless://15173b3d-22bf-5ac2-85ac-2bddaae12574@78.159.250.22:8443?encryption=none&security=reality&sni=yandex.ru&fp=firefox&pbk=k0bArveUYPbO0W53IQDSSJYKllFFQUnHmtA_WjJjvCc&sid=54d21365d229cc8b&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=grpc#Россия+6
-vless://20c9b62d-76d7-4fd1-b535-af86a2adefd6@195.209.87.181:443?encryption=none&security=tls&sni=s46270.cdn.ngenix.net&alpn=http%2F1.1&fp=chrome&allowinsecure=0&type=ws&host=s46270.cdn.ngenix.net&path=%2Fv1%2Fdata%2Fsync%2F#Германия+2
-vless://a5ea9247-79f3-4655-aece-3fb51e1e669e@158.160.196.38:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=rezerv9.yunus.guru&fp=qq&pbk=6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE&sid=34256b39b4ebb864&allowinsecure=0&type=tcp&headerType=none#Нидерланды+1
-vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.105:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&fp=chrome&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+7
-vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@213.219.212.24:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&fp=chrome&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+8
-vless://a5ea9247-79f3-4655-aece-3fb51e1e669e@158.160.161.175:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=rezerv7.yunus.guru&fp=qq&pbk=6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE&sid=34256b39b4ebb864&allowinsecure=0&type=tcp&headerType=none#Россия+9
-vless://7cec3808-65d4-4dbd-941f-e9b640977071@cdn.stroimvmeste.icu:443?encryption=none&security=tls&sni=cdn.stroimvmeste.icu&fp=chrome&allowinsecure=0&type=xhttp&mode=auto&path=%2Fstart#Германия+20
-vless://7cec3808-65d4-4dbd-941f-e9b640977071@185.71.67.223:443?encryption=none&security=tls&sni=cdn.stroimvmeste.icu&fp=chrome&allowinsecure=0&type=xhttp&mode=auto&path=%2Fstart#Прочее0
-vless://4c2b24e3-357f-4d26-b7d8-d670586cf21d@5.188.114.73:18443?encryption=none&security=reality&sni=ads.x5.ru&fp=firefox&pbk=olUTV28dWkomVkfH50avy8iELvc2gohx2fJF6bokqGI&allowinsecure=0&type=grpc&mode=gun&authority=ads.x5.ru&serviceName=ns#Германия0
+vless://90b43536-180c-4fdb-a991-29f042689d16@213.219.212.232:8448?flow=xtls-rprx-vision&encryption=none&security=reality&sni=360.yandex.ru&fp=firefox&pbk=2ST_pGGcXo0_EG3b7YLFrbsMGWRe0gmtrJDLrhwPeF0&sid=02cd12d35005b019&allowinsecure=0&type=tcp&headerType=none#Нидерланды+1new
+vless://a5d0bebb-3a92-075a-2df3-4c7d36b04af0@213.219.212.30:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&fp=firefox&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+1new
+vless://a5d0bebb-3a92-075a-2df3-4c7d36b04af0@176.109.92.139:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=ads.x5.ru&fp=firefox&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+2
+vless://a5d0bebb-3a92-075a-2df3-4c7d36b04af0@176.109.92.139:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=ads.x5.ru&fp=chrome&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+3new
+vless://a5d0bebb-3a92-075a-2df3-4c7d36b04af0@176.109.92.141:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=ads.x5.ru&fp=firefox&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+4
+vless://8a6f9d0b-dc16-431b-8914-cf8fde1eae7e@ru-213.monkeyisland.xyz:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=eh.vk.ru&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&allowinsecure=0&type=tcp&headerType=none#Россия+5
+vless://15173b3d-22bf-5ac2-85ac-2bddaae12574@78.159.250.22:8443?encryption=none&security=reality&sni=yandex.ru&fp=chrome&pbk=k0bArveUYPbO0W53IQDSSJYKllFFQUnHmtA_WjJjvCc&sid=54d21365d229cc8b&spx=%2F&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=grpc#Россия+6
+vless://15173b3d-22bf-5ac2-85ac-2bddaae12574@78.159.250.22:8443?encryption=none&security=reality&sni=yandex.ru&fp=firefox&pbk=k0bArveUYPbO0W53IQDSSJYKllFFQUnHmtA_WjJjvCc&sid=54d21365d229cc8b&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=grpc#Россия+7
+vless://2d1773bb-251e-4298-9105-4aa6f25e592c@46.182.24.124:443?encryption=none&security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=Kto_-HjLzajq1_Ffa69tSwfn-dIg1ow9elgaUBhkqyo&allowinsecure=0&type=grpc&mode=gun&authority=&serviceName=#Россия+8
+vless://2fc24fd7-9185-4ee4-ba0c-878339eea750@s65282.cdn.ngenix.net:443?encryption=none&security=tls&sni=s65282.cdn.ngenix.net&alpn=http%2F1.1&fp=firefox&allowinsecure=0&type=ws&host=s65282.cdn.ngenix.net&path=%2Fv1%2Fdata%2Fsync%2F#Нидерланды+2
+vless://35a14133-45f6-40bc-a9cd-918fd0ecb345@185.22.234.32:7443?encryption=none&security=tls&sni=mms-2.hysteria.ltd&fp=qq&allowinsecure=0&type=ws&path=%2Fws#Германия+1
+hysteria2://35a14133-45f6-40bc-a9cd-918fd0ecb345@vkmks.hysteria.ltd:5443?security=tls&fm=%7B%7D&sni=vkmks.hysteria.ltd&allowinsecure=0#Россия+9
+vless://52d7fc6a-09dc-47c6-8ac3-11da9d586338@89.208.231.163:10443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=apteka.vprok.ru&fp=random&pbk=vMnWxcThrk1iwo2KT_bEv00WDM1zhJosAQJRJv_aJ1c&sid=daee80f422c60154&allowinsecure=0&type=tcp&headerType=none#Россия+10
+vless://52d7fc6a-09dc-47c6-8ac3-11da9d586338@89.208.231.163:10443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=max.ru&fp=random&pbk=vMnWxcThrk1iwo2KT_bEv00WDM1zhJosAQJRJv_aJ1c&sid=daee80f422c60154&allowinsecure=0&type=tcp&headerType=none#Россия+11
+vless://52d7fc6a-09dc-47c6-8ac3-11da9d586338@89.208.231.163:10443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=ads.x5.ru&fp=random&pbk=vMnWxcThrk1iwo2KT_bEv00WDM1zhJosAQJRJv_aJ1c&sid=daee80f422c60154&allowinsecure=0&type=tcp&headerType=none#Россия+12
+vless://52d7fc6a-09dc-47c6-8ac3-11da9d586338@89.208.231.163:10443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=api.perekrestok.ru&fp=random&pbk=vMnWxcThrk1iwo2KT_bEv00WDM1zhJosAQJRJv_aJ1c&sid=daee80f422c60154&allowinsecure=0&type=tcp&headerType=none#Россия+ВСЕ+НОВЫЕ
 
