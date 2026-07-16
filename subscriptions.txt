@@ -1,5 +1,5 @@
 # Combined VPN Subscription from @tghappcluchi
-# Last update: 2026-07-16 11:28 UTC
+# Last update: 2026-07-16 18:07 UTC
 
 === New configs from gist ===
 #profile-title: happcluchi vpn 
@@ -39,6 +39,19 @@ vless://b6e50611-661d-4e78-8dff-73f68fb2bcf2@entry.gconexustun.ru:42471?encrypti
 vless://c61ec320-29f1-4e00-9272-8b676e6957b4@89.169.39.55:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=max.ru&fp=qq&pbk=Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU&sid=825867&allowinsecure=0&type=tcp&headerType=none#happcluchi 🇷🇺
 vless://b6e50611-661d-4e78-8dff-73f68fb2bcf2@entry.gconexustun.ru:43943?encryption=none&security=reality&sni=passport.yandex.ru&fp=chrome&pbk=SGzqWOelm9DQO45KWhYYL7mFAtIGrLdTG_5xq8BmdHU&allowinsecure=0&type=xhttp&mode=packet-up&path=%2F&extra=%7B%22noSSEHeader%22%3Atrue%2C%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22hMaxReusableSecs%22%3A%221800-3000%22%2C%22maxConcurrency%22%3A%2216-32%22%7D%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#happcluchi 🇫🇮
 vless://b6e50611-661d-4e78-8dff-73f68fb2bcf2@entry.gconexustun.ru:48313?encryption=none&security=reality&sni=passport.yandex.ru&fp=chrome&pbk=E-SCapk16uia3_5Z2Ijkb9S9Rvjj-hYLwKv8dAoWX3E&allowinsecure=0&type=xhttp&mode=packet-up&path=%2F&extra=%7B%22noSSEHeader%22%3Atrue%2C%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22hMaxReusableSecs%22%3A%221800-3000%22%2C%22maxConcurrency%22%3A%2216-32%22%7D%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#happcluchi 🇫🇮
+vless://a78718f4-04e8-4220-a9c1-6b4b852ef3e5@ru.pool-b.netcenter-cdn.com:44002?flow=xtls-rprx-vision&encryption=none&security=reality&sni=pool-b.pools.netcenter-cdn.com&fp=firefox&pbk=sl0wx4BFdJ7SsfQ6SjkSHU_SQ_0mAhyIlT2eAxWGRyQ&sid=f8&type=tcp&headerType=none#happcluchi 🇳🇱
+vless://196e394b-12f9-4c36-aa4c-2b8f4aa5a110@ru.pool-b.netcenter-cdn.com:44005?flow=xtls-rprx-vision&encryption=none&security=reality&sni=pool-b.pools.netcenter-cdn.com&fp=firefox&pbk=H-Xw09A4ViJT_XKYLQpWnDsh5LNyiusxeAx1hpVrqmc&sid=59a551a27a5923vless://7110a733-0f08-4ae1-b8a9-eac6fa38a01c@ru.pool-b.netcenter-cdn.com:44003?flow=xtls-rprx-vision&encryption=none&security=reality&sni=pool-b.pools.netcenter-cdn.com&fp=firefox&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=68fc781cf8&type=tcp&headerType=none#happcluchi 🇸🇪
+vless://7110a733-0f08-4ae1-b8a9-eac6fa38a01c@ru.pool-b.netcenter-cdn.com:44003?flow=xtls-rprx-vision&encryption=none&security=reality&sni=pool-b.pools.netcenter-cdn.com&fp=firefox&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=68fc781cf8&type=tcp&headerType=none#happcluchi 🇸🇪
+vless://7110a733-0f08-4ae1-b8a9-eac6fa38a01c@ru.pool-b.netcenter-cdn.com:44003?flow=xtls-rprx-vision&encryption=none&security=reality&sni=pool-b.pools.netcenter-cdn.com&fp=firefox&pbk=mCtDwMr9u9MdztUGzCGADj-nfHv6CQpAf_ywbyKl8ww&sid=68fc781cf8&type=tcp&headerType=none#happcluchi 🇫🇮
+vless://8f0560ec-ba22-4431-a6a7-318dc59d5233@144.31.129.42:443?encryption=none&security=reality&sni=morphbinerkkw.ru&fp=firefox&pbk=CxMPFpwhcR9Ocp-Xy_1J08mo-atdHKUf58WLOy_XlgM&sid=5e3ab3ab228625&type=grpc&mode=gun&authority=&serviceName=nexusGrpc#happcluchi 🇵🇱
+vless://61536c52-c9d9-4b0a-84d7-6e99a7f26a99@ru.pool-b.netcenter-cdn.com:44001?flow=xtls-rprx-vision&encryption=none&security=reality&sni=pool-b.pools.netcenter-cdn.com&fp=firefox&pbk=qXyJbGAN_0PyZFVR7vb7anVdCK2Zhxexs7dVgc3vqn0&sid=32e0&type=tcp&headerType=none#happcluchi 🇩🇪
+vless://68b4b16e-2759-47a4-8a69-33118edf5ce6@rftw.leontunel.ru:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=apple.com&fp=qq&pbk=_nC5hKYlrs2AT1l7e9ArgrlHBinEgidQHNIMzgUjoBA&type=tcp&headerType=none#happcluchi 🇩🇪
+vless://a0145a06-6cca-4a09-b0aa-a22e6f2074fe@46.182.24.19:443?encryption=none&security=reality&sni=ads.x5.ru&fp=chrome&pbk=et2NqKEKk8WCkCP7bhiNGETK3BKcCEjkhGBW1S7NC1Y&sid=f984c70279cf692a&type=grpc&mode=gun&authority=&serviceName=Gun#happcluchi 🇪🇸
+vless://c61ec320-29f1-4e00-9272-8b676e6957b4@89.169.39.55:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=max.ru&fp=qq&pbk=Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU&sid=825867&type=tcp&headerType=none#happcluchi 🇪🇪
+vless://d61b4e1b-4745-484f-8362-18537825a7af@194.164.217.139:448?encryption=none&security=reality&sni=www.samsung.com&fp=firefox&pbk=fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo&sid=05fdaa8a05be46a9&type=tcp&headerType=none#happcluchi 🇦🇹
+vless://52b71b75-4b77-4cec-990b-046ec1938e1f@67.159.56.57:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=uk.bvps.cloud&fp=firefox&pbk=j5qmR8E9er-0n5zZbK6s_SdvYm-tYlraXVYm49ArWS8&sid=60debb3ab744d8ce&type=tcp&headerType=none#happcluchi 🇫🇮
+vless://c61ec320-29f1-4e00-9272-8b676e6957b4@89.169.39.55:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=max.ru&fp=qq&pbk=Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU&sid=08&type=tcp&headerType=none#happcluchi 🇨🇿
+vless://d61b4e1b-4745-484f-8362-18537825a7af@194.164.217.139:448?encryption=none&security=reality&sni=www.samsung.com&fp=firefox&pbk=fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo&sid=05fdaa8a05be46a9&type=tcp&headerType=none#happcluchi 🇦🇹
 
 
 
