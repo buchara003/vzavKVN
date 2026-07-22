@@ -1,4 +1,4 @@
-name: pahh dec
+name: pahh coder
 
 on:
   schedule:
@@ -12,7 +12,6 @@ permissions:
 jobs:
   decode:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
