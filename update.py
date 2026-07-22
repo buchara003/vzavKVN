@@ -6,8 +6,8 @@ import requests
 API_KEY = os.environ["HAPPY_API_KEY"]
 
 CHANNELS = {
-    "happvpn": "https://t.me/s/happvpn",
-    "vpnruss1": "https://t.me/s/vpnruss1"
+    "happvpn": "https://t.me/s/happvpn",   # crypt5
+    "vpnruss1": "https://t.me/s/vpnruss1"  # crypt4
 }
 
 API_URL = "https://happy-decoder.cc/api/v1/decrypt"
@@ -67,6 +67,7 @@ def main():
     with open("sobr.txt", "w", encoding="utf-8") as f:
         f.write("\n\n".join(encoded_subs))
 
+    # === САМЫЙ ВАЖНЫЙ БЛОК ===
     with open("sobr3.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(decoded_subs))
 
