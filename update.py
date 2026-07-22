@@ -77,8 +77,8 @@ def main():
         f.write("\n".join(decoded_subs))
 
     print(f"\n✅ Готово!")
-    print(f"В sobr.txt  — {len(encoded_subs)} Base64")
-    print(f"В sobr3.txt — {len(decoded_subs)} голые протоколы из crypt4")
+    print(f"В sobr.txt  — только Base64 подписки")
+    print(f"В sobr3.txt — голые протоколы из crypt4")
     print(f"В sobr2.txt — всё объединено")
 
 
