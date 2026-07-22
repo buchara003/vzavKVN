@@ -1,11 +1,9 @@
 import os
 import re
 import requests
-from datetime import datetime
 
 API_KEY = os.environ["HAPPY_API_KEY"]
 
-# === КАНАЛЫ ===
 CHANNELS = {
     "happvpn": "https://t.me/s/happvpn",
     "vpnruss1": "https://t.me/s/vpnruss1"
@@ -16,16 +14,12 @@ API_URL = "https://happy-decoder.cc/api/v1/decrypt"
 def get_last_links():
     all_links = []
     for name, url in CHANNELS.items():
-        print(f"Получаю Telegram канал: {name}")
+        print(f"Получаю {name}...")
         html = requests.get(url, timeout=20).text
         links = re.findall(r"happ://crypt[4-5]/[A-Za-z0-9+/=]+", html)
         unique = list(dict.fromkeys(links))
-        all_links.extend(unique[-2:])  # по 2 из каждого канала
-        print(f"Найдено в {name}: {len(unique)} ссылок (берём последние 2)")
-
-    if not all_links:
-        raise Exception("Не найдено ни одной happ://crypt ссылок")
-
+        all_links.extend(unique[-2:])
+        print(f"В {name} найдено {len(unique)} (берём последние 2)")
     return all_links
 
 
@@ -75,8 +69,8 @@ def main():
         f.write("\n".join(decoded_subs))
 
     print(f"\n✅ Готово!")
-    print(f"Сохранено Base64 подписок: {len(encoded_subs)}")
-    print(f"Сохранено декодированных подписок: {len(decoded_subs)}")
+    print(f"В sobr.txt — {len(encoded_subs)} Base64 подписок")
+    print(f"В sobr2.txt — {len(decoded_subs)} полностью расшифрованных")
 
 
 if __name__ == "__main__":
