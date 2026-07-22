@@ -60,8 +60,7 @@ def main():
                 decoded = base64.b64decode(encoded).decode("utf-8", errors="ignore")
                 decoded_subs.append(decoded)
             except:
-                # Если уже протокол — просто сохраняем
-                decoded_subs.append(encoded)
+                decoded_subs.append(encoded)   # если уже протокол — просто сохраняем
         except Exception as e:
             print(f"Ошибка для {link[:60]}...: {e}")
 
@@ -71,7 +70,7 @@ def main():
         f.write("\n".join(decoded_subs))
 
     print(f"\n✅ Готово!")
-    print(f"В sobr.txt — только Base64 подписки (4 штуки)")
+    print(f"В sobr.txt — только Base64 подписки")
     print(f"В sobr2.txt — {len(decoded_subs)} полностью расшифрованных")
 
 
