@@ -1,4 +1,4 @@
-name: pahh coder
+name: pahh dec
 
 on:
   schedule:
@@ -12,6 +12,7 @@ permissions:
 jobs:
   decode:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -44,3 +45,4 @@ jobs:
             git commit -m "Update subscription $(date +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
+          
