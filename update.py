@@ -67,7 +67,6 @@ def main():
     with open("sobr.txt", "w", encoding="utf-8") as f:
         f.write("\n\n".join(encoded_subs))
 
-    # === САМЫЙ ВАЖНЫЙ БЛОК ===
     with open("sobr3.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(decoded_subs))
 
