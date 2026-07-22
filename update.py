@@ -5,23 +5,20 @@ import requests
 
 API_KEY = os.environ["HAPPY_API_KEY"]
 
+# === ТОЛЬКО ОДИН КАНАЛ (как сейчас) ===
 CHANNELS = {
-    "happvpn": "https://t.me/s/happvpn",   # crypt5
-    "vpnruss1": "https://t.me/s/vpnruss1"  # crypt4
+    "happvpn": "https://t.me/s/happvpn"   # crypt5
 }
 
 API_URL = "https://happy-decoder.cc/api/v1/decrypt"
 
 def get_last_links():
-    all_links = []
-    for name, url in CHANNELS.items():
-        print(f"Получаю {name}...")
-        html = requests.get(url, timeout=20).text
-        links = re.findall(r"happ://crypt[4-5]/[A-Za-z0-9+/=]+", html)
-        unique = list(dict.fromkeys(links))
-        all_links.extend(unique[-2:])
-        print(f"В {name} найдено {len(unique)} (берём последние 2)")
-    return all_links
+    print("Получаю Telegram канал happvpn...")
+    html = requests.get(CHANNELS["happvpn"], timeout=20).text
+    links = re.findall(r"happ://crypt5/[A-Za-z0-9+/=]+", html)
+    unique = list(dict.fromkeys(links))
+    print(f"Найдено {len(unique)} ссылок (берём последние 2)")
+    return unique[-2:]
 
 
 def decrypt(link):
@@ -67,6 +64,7 @@ def main():
     with open("sobr.txt", "w", encoding="utf-8") as f:
         f.write("\n\n".join(encoded_subs))
 
+    # Создаём sobr3.txt только с голыми протоколами из crypt4
     with open("sobr3.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(decoded_subs))
 
@@ -76,10 +74,10 @@ def main():
         f.write("\n".join(decoded_subs))
 
     print(f"\n✅ Готово!")
-    print(f"В sobr.txt  — только Base64 подписки")
+    print(f"В sobr.txt  — только Base64 из happvpn")
     print(f"В sobr3.txt — голые протоколы из crypt4")
     print(f"В sobr2.txt — всё объединено")
 
 
 if __name__ == "__main__":
-    main()
+    main() 
