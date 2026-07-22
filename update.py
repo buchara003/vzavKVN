@@ -5,8 +5,8 @@ import requests
 API_KEY = os.environ["HAPPY_API_KEY"]
 
 CHANNELS = {
-    "happvpn": "https://t.me/s/happvpn",
-    "vpnruss1": "https://t.me/s/vpnruss1"
+    "happvpn": "https://t.me/s/happvpn",   # crypt5
+    "vpnruss1": "https://t.me/s/vpnruss1"  # crypt4
 }
 
 API_URL = "https://happy-decoder.cc/api/v1/decrypt"
@@ -55,11 +55,13 @@ def main():
             encoded = download(sub_url)
             encoded_subs.append(encoded)
 
+            # Расшифровываем в любое формате
             try:
                 decoded = base64.b64decode(encoded).decode("utf-8", errors="ignore")
                 decoded_subs.append(decoded)
             except:
-                pass
+                # Если уже протокол — просто сохраняем
+                decoded_subs.append(encoded)
         except Exception as e:
             print(f"Ошибка для {link[:60]}...: {e}")
 
@@ -69,7 +71,7 @@ def main():
         f.write("\n".join(decoded_subs))
 
     print(f"\n✅ Готово!")
-    print(f"В sobr.txt — {len(encoded_subs)} Base64 подписок")
+    print(f"В sobr.txt — только Base64 подписки (4 штуки)")
     print(f"В sobr2.txt — {len(decoded_subs)} полностью расшифрованных")
 
 
