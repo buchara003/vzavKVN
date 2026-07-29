@@ -1,5 +1,5 @@
 # Combined VPN Subscription from @tghappcluchi
-# Last update: 2026-07-29 11:56 UTC
+# Last update: 2026-07-29 18:08 UTC
 
 === New configs from gist ===
 Vless://cb1d4044-0305-4e97-abb5-d95a6c1334fe@45.9.13.238:40019?security=reality&encryption=none&pbk=Dl4-nKAkksLHmX2yR0LWAzyFBjIj1W10R4OxHKMX2AI&fp=firefox&type=xhttp&sni=cdn4-23.yahoo.com#🇸🇴LTE | happcluchi vpn
