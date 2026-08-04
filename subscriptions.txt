@@ -1,5 +1,5 @@
 # Combined VPN Subscription from @tghappcluchi
-# Last update: 2026-08-04 11:58 UTC
+# Last update: 2026-08-04 18:27 UTC
 
 === New configs from gist ===
 Vless://94d2d711-76e5-4d82-a3c9-4f06fd5558c8@207.2.123.28:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=zb1esVBjrdlitl7Z_YkRi44kC0NXVvF5U17LAXW6fDQ&sid=825d392c67e4&sni=sa.ch-moltisanti.ru#WIFI | happcluchi vpn
