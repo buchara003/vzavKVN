@@ -2,7 +2,7 @@ vless://00000000-0000-0000-0000-000000000000@127.0.0.1:443?security=tls&type=tcp
 #announce: base64:4oaW77iPINCi0LXQu9C10LPRgNCw0Lwg0JrQsNC90LDQuzogQEhhcHBWUE4g4oaX77iPCtCi0LDQutC20LUg0YMg0LzQtdC90Y8g0LXRgdGC0Ywg0L/Qu9Cw0YLQvdGL0Lkg0JLQn9CdLCDQutC+0YLQvtGA0YvQuSDRgNCw0LHQvtGC0LDQtdGCINCx0LXQtyDQt9Cw0LzQtdC9INC4INC+0YfQtdC90Ywg0LHRi9GB0YLRgNC+8J+UpQrQnNC+0Lgg0LrQvtC90YLQsNC60YLRiyDirIfvuI8K8J+RpFRlbGVncmFtOiBASGFwcGlWUE5fc3VwcG9ydArwn5GkTGluazogKzk5MzYzNDI5NzIwCvCfkaRJTU86ICs5OTM2MzQyOTcyMAo=
 #profile-title: Telegram: @HappVPN
 #profile-update-interval: 24
-#subscription-userinfo: upload=0; download=223845796855; total=0; expire=0
+#subscription-userinfo: upload=0; download=803146883318; total=0; expire=0
 #support-url: https://t.me/HAPP_VPN_OFFICIAL
 #profile-web-page-url: https://t.me/HAPP_VPN_OFFICIAL
 
@@ -74,7 +74,7 @@ vless://237f91bf-102e-4077-8cc3-baebccb42936@85.198.70.200:14406?encryption=none
 #announce: base64:4oaW77iPINCi0LXQu9C10LPRgNCw0Lwg0JrQsNC90LDQuzogQEhhcHBWUE4g4oaX77iPCtCi0LDQutC20LUg0YMg0LzQtdC90Y8g0LXRgdGC0Ywg0L/Qu9Cw0YLQvdGL0Lkg0JLQn9CdLCDQutC+0YLQvtGA0YvQuSDRgNCw0LHQvtGC0LDQtdGCINCx0LXQtyDQt9Cw0LzQtdC9INC4INC+0YfQtdC90Ywg0LHRi9GB0YLRgNC+8J+UpQrQnNC+0Lgg0LrQvtC90YLQsNC60YLRiyDirIfvuI8K8J+RpFRlbGVncmFtOiBASGFwcGlWUE5fc3VwcG9ydArwn5GkTGluazogKzk5MzYzNDI5NzIwCvCfkaRJTU86ICs5OTM2MzQyOTcyMAo=
 #profile-title: Telegram: @HappVPN
 #profile-update-interval: 24
-#subscription-userinfo: upload=0; download=1081437094178; total=0; expire=0
+#subscription-userinfo: upload=0; download=3342749763618; total=0; expire=0
 #support-url: https://t.me/HAPP_VPN_OFFICIAL
 #profile-web-page-url: https://t.me/HAPP_VPN_OFFICIAL
 
